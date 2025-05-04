@@ -1,0 +1,158 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11251517
+##  Job Name : [none]
+##  Nodelist : gpu1402
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Sun May  4 12:59:21 AM EDT 2025
+###############################################################################
+====== Job and Node Information ======
+Job ID: 
+Node List: 
+Number of Nodes: 
+Number of Tasks: 
+CPUs per Task: 
+
+====== CPU Information ======
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   46 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+CPU family:                      6
+Model:                           85
+Thread(s) per core:              1
+Core(s) per socket:              16
+Socket(s):                       2
+Stepping:                        4
+CPU max MHz:                     3700.0000
+CPU min MHz:                     1000.0000
+BogoMIPS:                        5200.00
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke md_clear flush_l1d arch_capabilities
+Virtualization:                  VT-x
+L1d cache:                       1 MiB (32 instances)
+L1i cache:                       1 MiB (32 instances)
+L2 cache:                        32 MiB (32 instances)
+L3 cache:                        44 MiB (2 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-15
+NUMA node1 CPU(s):               16-31
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Retbleed:          Mitigation; IBRS
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT disabled
+
+====== Memory Information ======
+               total        used        free      shared  buff/cache   available
+Mem:           375Gi        60Gi        14Gi        13Gi       322Gi       314Gi
+Swap:             0B          0B          0B
+
+====== GPU Information (if available) ======
+Sun May  4 01:00:22 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA TITAN RTX               On  | 00000000:61:00.0 Off |                  N/A |
+| 41%   28C    P8              11W / 280W |     15MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     29134      G   /usr/libexec/Xorg                            13MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Result: <Invalid>
+Generating '/tmp/nsys-report-3d29.qdstrm'
+[1/8] [0%                          ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [0%                          ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [===========50%              ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================100%] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================99% ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================100%] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=====31%                    ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=====32%                    ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [==19%                       ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=======39%                  ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========40%                 ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========41%                 ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=========43%                ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=========44%                ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=========45%                ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [=========46%                ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [==========47%               ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [==========48%               ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [===========50%              ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [===========52%              ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [============57%             ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [==============63%           ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [======================92%   ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================98% ] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================100%] bitonic_sort-on-titanrtx.nsys-rep[1/8] [========================100%] bitonic_sort-on-titanrtx.nsys-rep
+[2/8] [0%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [1%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [2%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [3%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [4%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [5%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [6%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [7%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [8%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [9%                          ] bitonic_sort-on-titanrtx.sqlite[2/8] [10%                         ] bitonic_sort-on-titanrtx.sqlite[2/8] [11%                         ] bitonic_sort-on-titanrtx.sqlite[2/8] [12%                         ] bitonic_sort-on-titanrtx.sqlite[2/8] [13%                         ] bitonic_sort-on-titanrtx.sqlite[2/8] [14%                         ] bitonic_sort-on-titanrtx.sqlite[2/8] [=15%                        ] bitonic_sort-on-titanrtx.sqlite[2/8] [=16%                        ] bitonic_sort-on-titanrtx.sqlite[2/8] [=17%                        ] bitonic_sort-on-titanrtx.sqlite[2/8] [==18%                       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==19%                       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==20%                       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==21%                       ] bitonic_sort-on-titanrtx.sqlite[2/8] [===22%                      ] bitonic_sort-on-titanrtx.sqlite[2/8] [===23%                      ] bitonic_sort-on-titanrtx.sqlite[2/8] [===24%                      ] bitonic_sort-on-titanrtx.sqlite[2/8] [====25%                     ] bitonic_sort-on-titanrtx.sqlite[2/8] [====26%                     ] bitonic_sort-on-titanrtx.sqlite[2/8] [====27%                     ] bitonic_sort-on-titanrtx.sqlite[2/8] [====28%                     ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====29%                    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====30%                    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====31%                    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====32%                    ] bitonic_sort-on-titanrtx.sqlite[2/8] [======33%                   ] bitonic_sort-on-titanrtx.sqlite[2/8] [======34%                   ] bitonic_sort-on-titanrtx.sqlite[2/8] [======35%                   ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======36%                  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======37%                  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======38%                  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======39%                  ] bitonic_sort-on-titanrtx.sqlite[2/8] [========40%                 ] bitonic_sort-on-titanrtx.sqlite[2/8] [========41%                 ] bitonic_sort-on-titanrtx.sqlite[2/8] [========42%                 ] bitonic_sort-on-titanrtx.sqlite[2/8] [=========43%                ] bitonic_sort-on-titanrtx.sqlite[2/8] [=========44%                ] bitonic_sort-on-titanrtx.sqlite[2/8] [=========45%                ] bitonic_sort-on-titanrtx.sqlite[2/8] [=========46%                ] bitonic_sort-on-titanrtx.sqlite[2/8] [==========47%               ] bitonic_sort-on-titanrtx.sqlite[2/8] [==========48%               ] bitonic_sort-on-titanrtx.sqlite[2/8] [==========49%               ] bitonic_sort-on-titanrtx.sqlite[2/8] [===========50%              ] bitonic_sort-on-titanrtx.sqlite[2/8] [===========51%              ] bitonic_sort-on-titanrtx.sqlite[2/8] [===========52%              ] bitonic_sort-on-titanrtx.sqlite[2/8] [===========53%              ] bitonic_sort-on-titanrtx.sqlite[2/8] [============54%             ] bitonic_sort-on-titanrtx.sqlite[2/8] [============55%             ] bitonic_sort-on-titanrtx.sqlite[2/8] [============56%             ] bitonic_sort-on-titanrtx.sqlite[2/8] [============57%             ] bitonic_sort-on-titanrtx.sqlite[2/8] [=============58%            ] bitonic_sort-on-titanrtx.sqlite[2/8] [=============59%            ] bitonic_sort-on-titanrtx.sqlite[2/8] [=============60%            ] bitonic_sort-on-titanrtx.sqlite[2/8] [==============61%           ] bitonic_sort-on-titanrtx.sqlite[2/8] [==============62%           ] bitonic_sort-on-titanrtx.sqlite[2/8] [==============63%           ] bitonic_sort-on-titanrtx.sqlite[2/8] [==============64%           ] bitonic_sort-on-titanrtx.sqlite[2/8] [===============65%          ] bitonic_sort-on-titanrtx.sqlite[2/8] [===============66%          ] bitonic_sort-on-titanrtx.sqlite[2/8] [===============67%          ] bitonic_sort-on-titanrtx.sqlite[2/8] [================68%         ] bitonic_sort-on-titanrtx.sqlite[2/8] [================69%         ] bitonic_sort-on-titanrtx.sqlite[2/8] [================70%         ] bitonic_sort-on-titanrtx.sqlite[2/8] [================71%         ] bitonic_sort-on-titanrtx.sqlite[2/8] [=================72%        ] bitonic_sort-on-titanrtx.sqlite[2/8] [=================73%        ] bitonic_sort-on-titanrtx.sqlite[2/8] [=================74%        ] bitonic_sort-on-titanrtx.sqlite[2/8] [==================75%       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==================76%       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==================77%       ] bitonic_sort-on-titanrtx.sqlite[2/8] [==================78%       ] bitonic_sort-on-titanrtx.sqlite[2/8] [===================79%      ] bitonic_sort-on-titanrtx.sqlite[2/8] [===================80%      ] bitonic_sort-on-titanrtx.sqlite[2/8] [===================81%      ] bitonic_sort-on-titanrtx.sqlite[2/8] [===================82%      ] bitonic_sort-on-titanrtx.sqlite[2/8] [====================83%     ] bitonic_sort-on-titanrtx.sqlite[2/8] [====================84%     ] bitonic_sort-on-titanrtx.sqlite[2/8] [====================85%     ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====================86%    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====================87%    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====================88%    ] bitonic_sort-on-titanrtx.sqlite[2/8] [=====================89%    ] bitonic_sort-on-titanrtx.sqlite[2/8] [======================90%   ] bitonic_sort-on-titanrtx.sqlite[2/8] [======================91%   ] bitonic_sort-on-titanrtx.sqlite[2/8] [======================92%   ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======================93%  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======================94%  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======================95%  ] bitonic_sort-on-titanrtx.sqlite[2/8] [=======================96%  ] bitonic_sort-on-titanrtx.sqlite[2/8] [========================97% ] bitonic_sort-on-titanrtx.sqlite[2/8] [========================98% ] bitonic_sort-on-titanrtx.sqlite[2/8] [========================99% ] bitonic_sort-on-titanrtx.sqlite[2/8] [========================100%] bitonic_sort-on-titanrtx.sqlite[2/8] [========================100%] bitonic_sort-on-titanrtx.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)        Name     
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  ------------  --------------
+     30.9      521,277,521          1  521,277,521.0  521,277,521.0  521,277,521  521,277,521           0.0  waitpid       
+     28.0      472,981,748         22   21,499,170.4        1,853.0          970  451,966,768  96,197,139.9  read          
+     20.1      338,943,232          1  338,943,232.0  338,943,232.0  338,943,232  338,943,232           0.0  sem_wait      
+     11.8      199,766,033         16   12,485,377.1    3,460,687.0        1,976   73,840,425  21,821,601.1  poll          
+      6.9      115,751,009        557      207,811.5       27,354.0          995   37,253,178   1,840,862.2  ioctl         
+      1.6       27,506,211         60      458,436.9        8,080.5        1,932   24,848,718   3,210,593.3  open64        
+      0.2        2,754,481          7      393,497.3       18,626.0          186    1,572,527     591,458.5  fread         
+      0.1        2,423,306         43       56,356.0        5,101.0        2,462    1,555,931     247,541.1  fopen         
+      0.1        1,899,477         34       55,867.0        8,452.5        4,629    1,262,633     214,039.0  mmap64        
+      0.1        1,775,433         58       30,610.9          977.5          768    1,100,806     164,297.0  fcntl         
+      0.1        1,720,524         21       81,929.7       29,594.0          969    1,102,491     237,874.7  write         
+      0.1        1,398,103          5      279,620.6      156,822.0       95,291      533,301     219,944.2  pthread_create
+      0.0          190,394         21        9,066.4        6,088.0        1,646       56,155      11,672.7  mmap          
+      0.0           96,390         65        1,482.9           42.0           39       61,964       7,976.4  fgets         
+      0.0           71,076         36        1,974.3        1,762.5        1,228        7,541       1,004.8  fclose        
+      0.0           54,099         13        4,161.5        3,696.0        2,059        7,966       1,648.0  munmap        
+      0.0           45,589          6        7,598.2        7,656.0        2,878       12,014       4,062.2  open          
+      0.0           21,816          2       10,908.0       10,908.0       10,200       11,616       1,001.3  pipe2         
+      0.0           14,345          2        7,172.5        7,172.5        6,431        7,914       1,048.6  socket        
+      0.0           12,458          3        4,152.7        4,158.0        4,019        4,281         131.1  mprotect      
+      0.0           10,267          1       10,267.0       10,267.0       10,267       10,267           0.0  connect       
+      0.0            6,978          8          872.3          868.5          757        1,000          73.0  dup           
+      0.0            6,504          8          813.0          816.0          705          930          83.8  sigaction     
+      0.0            5,556          1        5,556.0        5,556.0        5,556        5,556           0.0  fopen64       
+      0.0            5,519          2        2,759.5        2,759.5        2,489        3,030         382.5  signal        
+      0.0            2,202          1        2,202.0        2,202.0        2,202        2,202           0.0  bind          
+      0.0            1,433          1        1,433.0        1,433.0        1,433        1,433           0.0  listen        
+      0.0              822         10           82.2           34.0           31          298          94.7  fflush        
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)    Max (ns)     StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  ---------  -----------  -------------  ----------------------
+     98.0      213,923,712          2  106,961,856.0  106,961,856.0  5,159,713  208,763,999  143,969,971.3  cudaMemcpyToSymbol    
+      1.7        3,737,179          5      747,435.8       36,551.0      3,301    3,617,809    1,604,719.7  cudaLaunchKernel      
+      0.3          546,884          1      546,884.0      546,884.0    546,884      546,884            0.0  cudaMalloc            
+      0.0           66,366          6       11,061.0        9,437.5      4,223       23,821        6,617.9  cudaMemcpy            
+      0.0            5,171          1        5,171.0        5,171.0      5,171        5,171            0.0  cudaDeviceSynchronize 
+      0.0              967          1          967.0          967.0        967          967            0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                   Name                 
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  --------------------------------------
+     82.6          447,866          1  447,866.0  447,866.0   447,866   447,866          0.0  initialize(GNet *)                    
+     16.5           89,663          1   89,663.0   89,663.0    89,663    89,663          0.0  print_result(GNet *)                  
+      0.4            2,368          1    2,368.0    2,368.0     2,368     2,368          0.0  inbetween(GNet *)                     
+      0.4            2,016          1    2,016.0    2,016.0     2,016     2,016          0.0  boot_redex(GNet *, unsigned long long)
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)      Operation     
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ------------------
+     99.9        9,614,335      3  3,204,778.3  4,600,386.0       448  5,013,501  2,782,708.3  [CUDA memcpy HtoD]
+      0.1            7,136      5      1,427.2      1,376.0     1,248      1,632        194.1  [CUDA memcpy DtoH]
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+     51.380      3    17.127    25.690     0.000    25.690       14.832  [CUDA memcpy HtoD]
+      0.000      5     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Generated:
+    /oscar/home/igordon/cs1952y_final/out/bitonic_sort-on-titanrtx.nsys-rep
+    /oscar/home/igordon/cs1952y_final/out/bitonic_sort-on-titanrtx.sqlite

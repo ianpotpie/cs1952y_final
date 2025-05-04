@@ -1,0 +1,9 @@
+    Updating crates.io index
+     Ignored package `hvm v2.0.22` is already installed, use --force to override
+    Updating crates.io index
+     Ignored package `bend-lang v0.2.38` is already installed, use --force to override
+[4m[1m[31mErrors:[0m
+HVM output had no result (An error likely occurred)
+
+Importer error status: An unknown error occurred.
+slurmstepd: error: Detected 2 oom_kill events in StepId=11239438.batch. Some of the step tasks have been OOM Killed.

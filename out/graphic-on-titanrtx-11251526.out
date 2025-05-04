@@ -1,0 +1,158 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11251526
+##  Job Name : [none]
+##  Nodelist : gpu1402
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Sun May  4 01:00:28 AM EDT 2025
+###############################################################################
+====== Job and Node Information ======
+Job ID: 
+Node List: 
+Number of Nodes: 
+Number of Tasks: 
+CPUs per Task: 
+
+====== CPU Information ======
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   46 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+CPU family:                      6
+Model:                           85
+Thread(s) per core:              1
+Core(s) per socket:              16
+Socket(s):                       2
+Stepping:                        4
+CPU max MHz:                     3700.0000
+CPU min MHz:                     1000.0000
+BogoMIPS:                        5200.00
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke md_clear flush_l1d arch_capabilities
+Virtualization:                  VT-x
+L1d cache:                       1 MiB (32 instances)
+L1i cache:                       1 MiB (32 instances)
+L2 cache:                        32 MiB (32 instances)
+L3 cache:                        44 MiB (2 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-15
+NUMA node1 CPU(s):               16-31
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Retbleed:          Mitigation; IBRS
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT disabled
+
+====== Memory Information ======
+               total        used        free      shared  buff/cache   available
+Mem:           375Gi        64Gi        10Gi        14Gi       322Gi       310Gi
+Swap:             0B          0B          0B
+
+====== GPU Information (if available) ======
+Sun May  4 01:01:30 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA TITAN RTX               On  | 00000000:61:00.0 Off |                  N/A |
+| 40%   28C    P8              11W / 280W |     15MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     29134      G   /usr/libexec/Xorg                            13MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Result: <Invalid>
+Generating '/tmp/nsys-report-9bef.qdstrm'
+[1/8] [0%                          ] graphic-on-titanrtx.nsys-rep[1/8] [0%                          ] graphic-on-titanrtx.nsys-rep[1/8] [===========50%              ] graphic-on-titanrtx.nsys-rep[1/8] [========================100%] graphic-on-titanrtx.nsys-rep[1/8] [========================99% ] graphic-on-titanrtx.nsys-rep[1/8] [========================100%] graphic-on-titanrtx.nsys-rep[1/8] [=====31%                    ] graphic-on-titanrtx.nsys-rep[1/8] [=====32%                    ] graphic-on-titanrtx.nsys-rep[1/8] [==20%                       ] graphic-on-titanrtx.nsys-rep[1/8] [=======39%                  ] graphic-on-titanrtx.nsys-rep[1/8] [========40%                 ] graphic-on-titanrtx.nsys-rep[1/8] [=========43%                ] graphic-on-titanrtx.nsys-rep[1/8] [=========44%                ] graphic-on-titanrtx.nsys-rep[1/8] [=========45%                ] graphic-on-titanrtx.nsys-rep[1/8] [=========46%                ] graphic-on-titanrtx.nsys-rep[1/8] [==========47%               ] graphic-on-titanrtx.nsys-rep[1/8] [==========48%               ] graphic-on-titanrtx.nsys-rep[1/8] [===========50%              ] graphic-on-titanrtx.nsys-rep[1/8] [============56%             ] graphic-on-titanrtx.nsys-rep[1/8] [==============62%           ] graphic-on-titanrtx.nsys-rep[1/8] [======================92%   ] graphic-on-titanrtx.nsys-rep[1/8] [========================98% ] graphic-on-titanrtx.nsys-rep[1/8] [========================100%] graphic-on-titanrtx.nsys-rep[1/8] [========================100%] graphic-on-titanrtx.nsys-rep
+[2/8] [0%                          ] graphic-on-titanrtx.sqlite[2/8] [1%                          ] graphic-on-titanrtx.sqlite[2/8] [2%                          ] graphic-on-titanrtx.sqlite[2/8] [3%                          ] graphic-on-titanrtx.sqlite[2/8] [4%                          ] graphic-on-titanrtx.sqlite[2/8] [5%                          ] graphic-on-titanrtx.sqlite[2/8] [6%                          ] graphic-on-titanrtx.sqlite[2/8] [7%                          ] graphic-on-titanrtx.sqlite[2/8] [8%                          ] graphic-on-titanrtx.sqlite[2/8] [9%                          ] graphic-on-titanrtx.sqlite[2/8] [10%                         ] graphic-on-titanrtx.sqlite[2/8] [11%                         ] graphic-on-titanrtx.sqlite[2/8] [12%                         ] graphic-on-titanrtx.sqlite[2/8] [13%                         ] graphic-on-titanrtx.sqlite[2/8] [14%                         ] graphic-on-titanrtx.sqlite[2/8] [=15%                        ] graphic-on-titanrtx.sqlite[2/8] [=16%                        ] graphic-on-titanrtx.sqlite[2/8] [=17%                        ] graphic-on-titanrtx.sqlite[2/8] [==18%                       ] graphic-on-titanrtx.sqlite[2/8] [==19%                       ] graphic-on-titanrtx.sqlite[2/8] [==20%                       ] graphic-on-titanrtx.sqlite[2/8] [==21%                       ] graphic-on-titanrtx.sqlite[2/8] [===22%                      ] graphic-on-titanrtx.sqlite[2/8] [===23%                      ] graphic-on-titanrtx.sqlite[2/8] [===24%                      ] graphic-on-titanrtx.sqlite[2/8] [====25%                     ] graphic-on-titanrtx.sqlite[2/8] [====26%                     ] graphic-on-titanrtx.sqlite[2/8] [====27%                     ] graphic-on-titanrtx.sqlite[2/8] [====28%                     ] graphic-on-titanrtx.sqlite[2/8] [=====29%                    ] graphic-on-titanrtx.sqlite[2/8] [=====30%                    ] graphic-on-titanrtx.sqlite[2/8] [=====31%                    ] graphic-on-titanrtx.sqlite[2/8] [=====32%                    ] graphic-on-titanrtx.sqlite[2/8] [======33%                   ] graphic-on-titanrtx.sqlite[2/8] [======34%                   ] graphic-on-titanrtx.sqlite[2/8] [======35%                   ] graphic-on-titanrtx.sqlite[2/8] [=======36%                  ] graphic-on-titanrtx.sqlite[2/8] [=======37%                  ] graphic-on-titanrtx.sqlite[2/8] [=======38%                  ] graphic-on-titanrtx.sqlite[2/8] [=======39%                  ] graphic-on-titanrtx.sqlite[2/8] [========40%                 ] graphic-on-titanrtx.sqlite[2/8] [========41%                 ] graphic-on-titanrtx.sqlite[2/8] [========42%                 ] graphic-on-titanrtx.sqlite[2/8] [=========43%                ] graphic-on-titanrtx.sqlite[2/8] [=========44%                ] graphic-on-titanrtx.sqlite[2/8] [=========45%                ] graphic-on-titanrtx.sqlite[2/8] [=========46%                ] graphic-on-titanrtx.sqlite[2/8] [==========47%               ] graphic-on-titanrtx.sqlite[2/8] [==========48%               ] graphic-on-titanrtx.sqlite[2/8] [==========49%               ] graphic-on-titanrtx.sqlite[2/8] [===========50%              ] graphic-on-titanrtx.sqlite[2/8] [===========51%              ] graphic-on-titanrtx.sqlite[2/8] [===========52%              ] graphic-on-titanrtx.sqlite[2/8] [===========53%              ] graphic-on-titanrtx.sqlite[2/8] [============54%             ] graphic-on-titanrtx.sqlite[2/8] [============55%             ] graphic-on-titanrtx.sqlite[2/8] [============56%             ] graphic-on-titanrtx.sqlite[2/8] [============57%             ] graphic-on-titanrtx.sqlite[2/8] [=============58%            ] graphic-on-titanrtx.sqlite[2/8] [=============59%            ] graphic-on-titanrtx.sqlite[2/8] [=============60%            ] graphic-on-titanrtx.sqlite[2/8] [==============61%           ] graphic-on-titanrtx.sqlite[2/8] [==============62%           ] graphic-on-titanrtx.sqlite[2/8] [==============63%           ] graphic-on-titanrtx.sqlite[2/8] [==============64%           ] graphic-on-titanrtx.sqlite[2/8] [===============65%          ] graphic-on-titanrtx.sqlite[2/8] [===============66%          ] graphic-on-titanrtx.sqlite[2/8] [===============67%          ] graphic-on-titanrtx.sqlite[2/8] [================68%         ] graphic-on-titanrtx.sqlite[2/8] [================69%         ] graphic-on-titanrtx.sqlite[2/8] [================70%         ] graphic-on-titanrtx.sqlite[2/8] [================71%         ] graphic-on-titanrtx.sqlite[2/8] [=================72%        ] graphic-on-titanrtx.sqlite[2/8] [=================73%        ] graphic-on-titanrtx.sqlite[2/8] [=================74%        ] graphic-on-titanrtx.sqlite[2/8] [==================75%       ] graphic-on-titanrtx.sqlite[2/8] [==================76%       ] graphic-on-titanrtx.sqlite[2/8] [==================77%       ] graphic-on-titanrtx.sqlite[2/8] [==================78%       ] graphic-on-titanrtx.sqlite[2/8] [===================79%      ] graphic-on-titanrtx.sqlite[2/8] [===================80%      ] graphic-on-titanrtx.sqlite[2/8] [===================81%      ] graphic-on-titanrtx.sqlite[2/8] [===================82%      ] graphic-on-titanrtx.sqlite[2/8] [====================83%     ] graphic-on-titanrtx.sqlite[2/8] [====================84%     ] graphic-on-titanrtx.sqlite[2/8] [====================85%     ] graphic-on-titanrtx.sqlite[2/8] [=====================86%    ] graphic-on-titanrtx.sqlite[2/8] [=====================87%    ] graphic-on-titanrtx.sqlite[2/8] [=====================88%    ] graphic-on-titanrtx.sqlite[2/8] [=====================89%    ] graphic-on-titanrtx.sqlite[2/8] [======================90%   ] graphic-on-titanrtx.sqlite[2/8] [======================91%   ] graphic-on-titanrtx.sqlite[2/8] [======================92%   ] graphic-on-titanrtx.sqlite[2/8] [=======================93%  ] graphic-on-titanrtx.sqlite[2/8] [=======================94%  ] graphic-on-titanrtx.sqlite[2/8] [=======================95%  ] graphic-on-titanrtx.sqlite[2/8] [=======================96%  ] graphic-on-titanrtx.sqlite[2/8] [========================97% ] graphic-on-titanrtx.sqlite[2/8] [========================98% ] graphic-on-titanrtx.sqlite[2/8] [========================99% ] graphic-on-titanrtx.sqlite[2/8] [========================100%] graphic-on-titanrtx.sqlite[2/8] [========================100%] graphic-on-titanrtx.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)        Name     
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  ------------  --------------
+     30.0      476,533,489          1  476,533,489.0  476,533,489.0  476,533,489  476,533,489           0.0  waitpid       
+     27.6      439,057,388         22   19,957,154.0        1,803.5          938  426,914,814  90,923,104.2  read          
+     21.7      345,511,869          1  345,511,869.0  345,511,869.0  345,511,869  345,511,869           0.0  sem_wait      
+     12.5      199,493,067         16   12,468,316.7    3,585,914.0        2,092   69,179,845  20,686,547.2  poll          
+      6.7      106,914,574        557      191,947.2       27,384.0        1,052   34,960,538   1,627,347.6  ioctl         
+      0.5        7,417,377         60      123,623.0        8,166.0        1,876    4,189,149     571,226.9  open64        
+      0.2        3,668,739          5      733,747.8      147,534.0      112,022    2,750,641   1,141,685.8  pthread_create
+      0.2        2,964,543          7      423,506.1       14,868.0          118    1,990,718     728,327.1  fread         
+      0.1        2,007,131         43       46,677.5        4,893.0        2,514    1,116,695     191,441.1  fopen         
+      0.1        1,939,417         34       57,041.7        7,752.5        3,803    1,298,609     220,200.4  mmap64        
+      0.1        1,827,107         58       31,501.8          998.5          750    1,121,311     168,266.6  fcntl         
+      0.1        1,797,578         21       85,599.0       29,928.0          973    1,156,657     249,707.6  write         
+      0.0          241,466         21       11,498.4        5,769.0        1,799       57,842      13,295.0  mmap          
+      0.0           94,470         65        1,453.4           46.0           39       61,630       7,902.7  fgets         
+      0.0           72,795         36        2,022.1        1,688.0        1,281        6,952       1,102.8  fclose        
+      0.0           54,691         14        3,906.5        4,079.5        2,000        5,320       1,118.2  munmap        
+      0.0           36,243          6        6,040.5        4,940.0        2,227       11,466       3,454.5  open          
+      0.0           24,777          2       12,388.5       12,388.5        9,669       15,108       3,846.0  pipe2         
+      0.0           16,028          2        8,014.0        8,014.0        6,677        9,351       1,890.8  socket        
+      0.0           11,598          1       11,598.0       11,598.0       11,598       11,598           0.0  connect       
+      0.0            8,842          3        2,947.3        3,034.0        2,600        3,208         313.1  mprotect      
+      0.0            7,450          1        7,450.0        7,450.0        7,450        7,450           0.0  fopen64       
+      0.0            7,032          8          879.0          866.0          743        1,122         134.3  dup           
+      0.0            6,945          8          868.1          816.0          708        1,179         156.4  sigaction     
+      0.0            5,509          2        2,754.5        2,754.5        2,442        3,067         441.9  signal        
+      0.0            2,928          1        2,928.0        2,928.0        2,928        2,928           0.0  bind          
+      0.0            1,533          1        1,533.0        1,533.0        1,533        1,533           0.0  listen        
+      0.0            1,054         10          105.4           33.0           31          551         162.1  fflush        
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)    Max (ns)     StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  ---------  -----------  -------------  ----------------------
+     97.9      207,023,541          2  103,511,770.5  103,511,770.5  5,342,900  201,680,641  138,831,748.1  cudaMemcpyToSymbol    
+      1.8        3,718,434          5      743,686.8       46,367.0      3,438    3,586,439    1,589,311.4  cudaLaunchKernel      
+      0.3          564,181          1      564,181.0      564,181.0    564,181      564,181            0.0  cudaMalloc            
+      0.0           64,644          6       10,774.0        9,442.0      4,552       21,387        5,611.7  cudaMemcpy            
+      0.0            4,661          1        4,661.0        4,661.0      4,661        4,661            0.0  cudaDeviceSynchronize 
+      0.0            1,565          1        1,565.0        1,565.0      1,565        1,565            0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                   Name                 
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  --------------------------------------
+     82.5          447,867          1  447,867.0  447,867.0   447,867   447,867          0.0  initialize(GNet *)                    
+     16.6           90,335          1   90,335.0   90,335.0    90,335    90,335          0.0  print_result(GNet *)                  
+      0.4            2,368          1    2,368.0    2,368.0     2,368     2,368          0.0  inbetween(GNet *)                     
+      0.4            2,016          1    2,016.0    2,016.0     2,016     2,016          0.0  boot_redex(GNet *, unsigned long long)
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)      Operation     
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ------------------
+     99.9        9,665,777      3  3,221,925.7  4,781,609.0       480  4,883,688  2,790,320.6  [CUDA memcpy HtoD]
+      0.1            7,167      5      1,433.4      1,376.0     1,248      1,632        187.3  [CUDA memcpy DtoH]
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+     51.380      3    17.127    25.690     0.000    25.690       14.832  [CUDA memcpy HtoD]
+      0.000      5     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Generated:
+    /oscar/home/igordon/cs1952y_final/out/graphic-on-titanrtx.nsys-rep
+    /oscar/home/igordon/cs1952y_final/out/graphic-on-titanrtx.sqlite

@@ -1,0 +1,160 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11251498
+##  Job Name : [none]
+##  Nodelist : gpu2503
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Sat May  3 09:56:26 PM EDT 2025
+###############################################################################
+====== Job and Node Information ======
+Job ID: 
+Node List: 
+Number of Nodes: 
+Number of Tasks: 
+CPUs per Task: 
+
+====== CPU Information ======
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   43 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          128
+On-line CPU(s) list:             0-127
+Vendor ID:                       AuthenticAMD
+Model name:                      AMD EPYC 7662 64-Core Processor
+CPU family:                      23
+Model:                           49
+Thread(s) per core:              1
+Core(s) per socket:              64
+Socket(s):                       2
+Stepping:                        0
+Frequency boost:                 enabled
+CPU max MHz:                     2154.2959
+CPU min MHz:                     1500.0000
+BogoMIPS:                        3999.90
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
+Virtualization:                  AMD-V
+L1d cache:                       4 MiB (128 instances)
+L1i cache:                       4 MiB (128 instances)
+L2 cache:                        64 MiB (128 instances)
+L3 cache:                        512 MiB (32 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-63
+NUMA node1 CPU(s):               64-127
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT disabled
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+
+====== Memory Information ======
+               total        used        free      shared  buff/cache   available
+Mem:           1.0Ti        55Gi        77Gi       8.6Gi       893Gi       951Gi
+Swap:             0B          0B          0B
+
+====== GPU Information (if available) ======
+Sat May  3 21:57:35 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A5500               On  | 00000000:28:00.0 Off |                  Off |
+| 30%   35C    P8              27W / 230W |     21MiB / 24564MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     73799      G   /usr/libexec/Xorg                             8MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Result: 832040
+Generating '/tmp/nsys-report-b16c.qdstrm'
+[1/8] [0%                          ] fib_iterative-on-a5500.nsys-rep[1/8] [0%                          ] fib_iterative-on-a5500.nsys-rep[1/8] [=16%                        ] fib_iterative-on-a5500.nsys-rep[1/8] [=====32%                    ] fib_iterative-on-a5500.nsys-rep[1/8] [===========50%              ] fib_iterative-on-a5500.nsys-rep[1/8] [===========51%              ] fib_iterative-on-a5500.nsys-rep[1/8] [===========52%              ] fib_iterative-on-a5500.nsys-rep[1/8] [============54%             ] fib_iterative-on-a5500.nsys-rep[1/8] [============57%             ] fib_iterative-on-a5500.nsys-rep[1/8] [=============58%            ] fib_iterative-on-a5500.nsys-rep[1/8] [=============59%            ] fib_iterative-on-a5500.nsys-rep[1/8] [==============61%           ] fib_iterative-on-a5500.nsys-rep[1/8] [==============62%           ] fib_iterative-on-a5500.nsys-rep[1/8] [==============63%           ] fib_iterative-on-a5500.nsys-rep[1/8] [===============67%          ] fib_iterative-on-a5500.nsys-rep[1/8] [=================72%        ] fib_iterative-on-a5500.nsys-rep[1/8] [=======================94%  ] fib_iterative-on-a5500.nsys-rep[1/8] [========================98% ] fib_iterative-on-a5500.nsys-rep[1/8] [========================100%] fib_iterative-on-a5500.nsys-rep[1/8] [========================100%] fib_iterative-on-a5500.nsys-rep
+[2/8] [0%                          ] fib_iterative-on-a5500.sqlite[2/8] [1%                          ] fib_iterative-on-a5500.sqlite[2/8] [2%                          ] fib_iterative-on-a5500.sqlite[2/8] [3%                          ] fib_iterative-on-a5500.sqlite[2/8] [4%                          ] fib_iterative-on-a5500.sqlite[2/8] [5%                          ] fib_iterative-on-a5500.sqlite[2/8] [6%                          ] fib_iterative-on-a5500.sqlite[2/8] [7%                          ] fib_iterative-on-a5500.sqlite[2/8] [8%                          ] fib_iterative-on-a5500.sqlite[2/8] [9%                          ] fib_iterative-on-a5500.sqlite[2/8] [10%                         ] fib_iterative-on-a5500.sqlite[2/8] [11%                         ] fib_iterative-on-a5500.sqlite[2/8] [12%                         ] fib_iterative-on-a5500.sqlite[2/8] [13%                         ] fib_iterative-on-a5500.sqlite[2/8] [14%                         ] fib_iterative-on-a5500.sqlite[2/8] [=15%                        ] fib_iterative-on-a5500.sqlite[2/8] [=16%                        ] fib_iterative-on-a5500.sqlite[2/8] [=17%                        ] fib_iterative-on-a5500.sqlite[2/8] [==18%                       ] fib_iterative-on-a5500.sqlite[2/8] [==19%                       ] fib_iterative-on-a5500.sqlite[2/8] [==20%                       ] fib_iterative-on-a5500.sqlite[2/8] [==21%                       ] fib_iterative-on-a5500.sqlite[2/8] [===22%                      ] fib_iterative-on-a5500.sqlite[2/8] [===23%                      ] fib_iterative-on-a5500.sqlite[2/8] [===24%                      ] fib_iterative-on-a5500.sqlite[2/8] [====25%                     ] fib_iterative-on-a5500.sqlite[2/8] [====26%                     ] fib_iterative-on-a5500.sqlite[2/8] [====27%                     ] fib_iterative-on-a5500.sqlite[2/8] [====28%                     ] fib_iterative-on-a5500.sqlite[2/8] [=====29%                    ] fib_iterative-on-a5500.sqlite[2/8] [=====30%                    ] fib_iterative-on-a5500.sqlite[2/8] [=====31%                    ] fib_iterative-on-a5500.sqlite[2/8] [=====32%                    ] fib_iterative-on-a5500.sqlite[2/8] [======33%                   ] fib_iterative-on-a5500.sqlite[2/8] [======34%                   ] fib_iterative-on-a5500.sqlite[2/8] [======35%                   ] fib_iterative-on-a5500.sqlite[2/8] [=======36%                  ] fib_iterative-on-a5500.sqlite[2/8] [=======37%                  ] fib_iterative-on-a5500.sqlite[2/8] [=======38%                  ] fib_iterative-on-a5500.sqlite[2/8] [=======39%                  ] fib_iterative-on-a5500.sqlite[2/8] [========40%                 ] fib_iterative-on-a5500.sqlite[2/8] [========41%                 ] fib_iterative-on-a5500.sqlite[2/8] [========42%                 ] fib_iterative-on-a5500.sqlite[2/8] [=========43%                ] fib_iterative-on-a5500.sqlite[2/8] [=========44%                ] fib_iterative-on-a5500.sqlite[2/8] [=========45%                ] fib_iterative-on-a5500.sqlite[2/8] [=========46%                ] fib_iterative-on-a5500.sqlite[2/8] [==========47%               ] fib_iterative-on-a5500.sqlite[2/8] [==========48%               ] fib_iterative-on-a5500.sqlite[2/8] [==========49%               ] fib_iterative-on-a5500.sqlite[2/8] [===========50%              ] fib_iterative-on-a5500.sqlite[2/8] [===========51%              ] fib_iterative-on-a5500.sqlite[2/8] [===========52%              ] fib_iterative-on-a5500.sqlite[2/8] [===========53%              ] fib_iterative-on-a5500.sqlite[2/8] [============54%             ] fib_iterative-on-a5500.sqlite[2/8] [============55%             ] fib_iterative-on-a5500.sqlite[2/8] [============56%             ] fib_iterative-on-a5500.sqlite[2/8] [============57%             ] fib_iterative-on-a5500.sqlite[2/8] [=============58%            ] fib_iterative-on-a5500.sqlite[2/8] [=============59%            ] fib_iterative-on-a5500.sqlite[2/8] [=============60%            ] fib_iterative-on-a5500.sqlite[2/8] [==============61%           ] fib_iterative-on-a5500.sqlite[2/8] [==============62%           ] fib_iterative-on-a5500.sqlite[2/8] [==============63%           ] fib_iterative-on-a5500.sqlite[2/8] [==============64%           ] fib_iterative-on-a5500.sqlite[2/8] [===============65%          ] fib_iterative-on-a5500.sqlite[2/8] [===============66%          ] fib_iterative-on-a5500.sqlite[2/8] [===============67%          ] fib_iterative-on-a5500.sqlite[2/8] [================68%         ] fib_iterative-on-a5500.sqlite[2/8] [================69%         ] fib_iterative-on-a5500.sqlite[2/8] [================70%         ] fib_iterative-on-a5500.sqlite[2/8] [================71%         ] fib_iterative-on-a5500.sqlite[2/8] [=================72%        ] fib_iterative-on-a5500.sqlite[2/8] [=================73%        ] fib_iterative-on-a5500.sqlite[2/8] [=================74%        ] fib_iterative-on-a5500.sqlite[2/8] [==================75%       ] fib_iterative-on-a5500.sqlite[2/8] [==================76%       ] fib_iterative-on-a5500.sqlite[2/8] [==================77%       ] fib_iterative-on-a5500.sqlite[2/8] [==================78%       ] fib_iterative-on-a5500.sqlite[2/8] [===================79%      ] fib_iterative-on-a5500.sqlite[2/8] [===================80%      ] fib_iterative-on-a5500.sqlite[2/8] [===================81%      ] fib_iterative-on-a5500.sqlite[2/8] [===================82%      ] fib_iterative-on-a5500.sqlite[2/8] [====================83%     ] fib_iterative-on-a5500.sqlite[2/8] [====================84%     ] fib_iterative-on-a5500.sqlite[2/8] [====================85%     ] fib_iterative-on-a5500.sqlite[2/8] [=====================86%    ] fib_iterative-on-a5500.sqlite[2/8] [=====================87%    ] fib_iterative-on-a5500.sqlite[2/8] [=====================88%    ] fib_iterative-on-a5500.sqlite[2/8] [=====================89%    ] fib_iterative-on-a5500.sqlite[2/8] [======================90%   ] fib_iterative-on-a5500.sqlite[2/8] [======================91%   ] fib_iterative-on-a5500.sqlite[2/8] [======================92%   ] fib_iterative-on-a5500.sqlite[2/8] [=======================93%  ] fib_iterative-on-a5500.sqlite[2/8] [=======================94%  ] fib_iterative-on-a5500.sqlite[2/8] [=======================95%  ] fib_iterative-on-a5500.sqlite[2/8] [=======================96%  ] fib_iterative-on-a5500.sqlite[2/8] [========================97% ] fib_iterative-on-a5500.sqlite[2/8] [========================98% ] fib_iterative-on-a5500.sqlite[2/8] [========================99% ] fib_iterative-on-a5500.sqlite[2/8] [========================100%] fib_iterative-on-a5500.sqlite[2/8] [========================100%] fib_iterative-on-a5500.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)        Name     
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  ------------  --------------
+     32.3      530,477,974          1  530,477,974.0  530,477,974.0  530,477,974  530,477,974           0.0  waitpid       
+     28.4      466,570,243         26   17,945,009.3        2,170.0          400  452,813,602  88,730,357.5  read          
+     18.8      308,344,831          1  308,344,831.0  308,344,831.0  308,344,831  308,344,831           0.0  sem_wait      
+      9.7      160,034,034         15   10,668,935.6    3,890,136.0        1,960   60,383,454  17,251,571.0  poll          
+      6.8      112,126,479        554      202,394.4       43,695.0          550   34,289,921   1,627,190.5  ioctl         
+      1.4       23,201,746         66      351,541.6        7,535.0        1,300   21,318,094   2,623,627.2  open64        
+      1.0       17,183,740          7    2,454,820.0      556,525.0          150   13,864,539   5,069,861.6  fread         
+      1.0       16,970,149         46      368,916.3        5,210.0        2,100   13,035,616   1,939,442.1  fopen         
+      0.1        1,779,694         58       30,684.4          555.0          240      963,312     160,972.7  fcntl         
+      0.1        1,635,121         34       48,091.8       10,390.0        4,430      922,122     155,760.6  mmap64        
+      0.1        1,474,729         14      105,337.8       36,410.0        1,810      772,573     200,800.9  write         
+      0.1        1,388,087          5      277,617.4      221,588.0      152,688      434,647     120,747.6  pthread_create
+      0.0          262,969         21       12,522.3       11,600.0        1,530       48,449      10,983.1  mmap          
+      0.0          116,010         68        1,706.0           70.0           50       66,130       8,586.1  fgets         
+      0.0           75,929         15        5,061.9        4,370.0        1,840       12,110       2,812.6  munmap        
+      0.0           72,038         39        1,847.1        1,260.0          760       10,920       1,773.1  fclose        
+      0.0           48,010          6        8,001.7        6,290.0        1,820       16,120       5,957.3  open          
+      0.0           33,409          2       16,704.5       16,704.5       15,900       17,509       1,137.7  pipe2         
+      0.0           26,970          2       13,485.0       13,485.0       12,200       14,770       1,817.3  socket        
+      0.0           18,959          3        6,319.7        6,690.0        4,620        7,649       1,548.1  mprotect      
+      0.0           16,850          1       16,850.0       16,850.0       16,850       16,850           0.0  connect       
+      0.0           14,490          1       14,490.0       14,490.0       14,490       14,490           0.0  fopen64       
+      0.0            6,460          2        3,230.0        3,230.0        3,190        3,270          56.6  signal        
+      0.0            4,780         48           99.6           50.0           50        1,070         153.1  fflush        
+      0.0            4,500          8          562.5          705.0          250          830         246.2  dup           
+      0.0            2,800          8          350.0          330.0          230          580         113.4  sigaction     
+      0.0            2,120          1        2,120.0        2,120.0        2,120        2,120           0.0  bind          
+      0.0            1,330          1        1,330.0        1,330.0        1,330        1,330           0.0  listen        
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)    Max (ns)     StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  ---------  -----------  -------------  ----------------------
+     95.1      201,829,890          2  100,914,945.0  100,914,945.0  1,797,434  200,032,456  140,173,328.3  cudaMemcpyToSymbol    
+      2.6        5,550,952          5    1,110,190.4       49,999.0     18,690    3,534,769    1,578,667.7  cudaLaunchKernel      
+      2.0        4,194,893          8      524,361.6       15,834.5     11,360    3,899,426    1,365,354.6  cudaMemcpy            
+      0.3          733,144          1      733,144.0      733,144.0    733,144      733,144            0.0  cudaMalloc            
+      0.0            7,360          1        7,360.0        7,360.0      7,360        7,360            0.0  cudaDeviceSynchronize 
+      0.0            1,470          1        1,470.0        1,470.0      1,470        1,470            0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                   Name                 
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  --------------------------------------
+     90.3        3,919,381          1  3,919,381.0  3,919,381.0  3,919,381  3,919,381          0.0  evaluator(GNet *)                     
+      7.9          341,474          1    341,474.0    341,474.0    341,474    341,474          0.0  initialize(GNet *)                    
+      1.8           77,985          1     77,985.0     77,985.0     77,985     77,985          0.0  print_result(GNet *)                  
+      0.0            1,824          1      1,824.0      1,824.0      1,824      1,824          0.0  boot_redex(GNet *, unsigned long long)
+      0.0            1,728          1      1,728.0      1,728.0      1,728      1,728          0.0  inbetween(GNet *)                     
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)      Operation     
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ------------------
+     99.8        4,960,795      3  1,653,598.3  1,446,632.0       480  3,513,683  1,765,722.3  [CUDA memcpy HtoD]
+      0.2           10,464      7      1,494.9      1,504.0     1,280      1,920        223.0  [CUDA memcpy DtoH]
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+     51.380      3    17.127    25.690     0.000    25.690       14.832  [CUDA memcpy HtoD]
+      0.000      7     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Generated:
+    /oscar/home/igordon/cs1952y_final/out/fib_iterative-on-a5500.nsys-rep
+    /oscar/home/igordon/cs1952y_final/out/fib_iterative-on-a5500.sqlite

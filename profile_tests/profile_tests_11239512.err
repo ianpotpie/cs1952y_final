@@ -1,0 +1,11 @@
+    Updating crates.io index
+     Ignored package `hvm v2.0.22` is already installed, use --force to override
+    Updating crates.io index
+     Ignored package `bend-lang v0.2.38` is already installed, use --force to override
+[4m[1m[31mErrors:[0m
+HVM output had no result (An error likely occurred)
+
+Connection to Agent lost. This is most likely a bug. Internal reason: 'End of file'.
+Please refer to the troubleshooting section of the docs:
+https://docs.nvidia.com/nsight-systems/UserGuide/index.html#troubleshooting
+slurmstepd: error: Detected 2 oom_kill events in StepId=11239512.batch. Some of the step tasks have been OOM Killed.

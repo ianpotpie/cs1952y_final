@@ -1,0 +1,158 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11251500
+##  Job Name : [none]
+##  Nodelist : gpu1402
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Sun May  4 12:57:01 AM EDT 2025
+###############################################################################
+====== Job and Node Information ======
+Job ID: 
+Node List: 
+Number of Nodes: 
+Number of Tasks: 
+CPUs per Task: 
+
+====== CPU Information ======
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   46 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          32
+On-line CPU(s) list:             0-31
+Vendor ID:                       GenuineIntel
+Model name:                      Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+CPU family:                      6
+Model:                           85
+Thread(s) per core:              1
+Core(s) per socket:              16
+Socket(s):                       2
+Stepping:                        4
+CPU max MHz:                     3700.0000
+CPU min MHz:                     1000.0000
+BogoMIPS:                        5200.00
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke md_clear flush_l1d arch_capabilities
+Virtualization:                  VT-x
+L1d cache:                       1 MiB (32 instances)
+L1i cache:                       1 MiB (32 instances)
+L2 cache:                        32 MiB (32 instances)
+L3 cache:                        44 MiB (2 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-15
+NUMA node1 CPU(s):               16-31
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Mmio stale data:   Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Retbleed:          Mitigation; IBRS
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT disabled
+
+====== Memory Information ======
+               total        used        free      shared  buff/cache   available
+Mem:           375Gi        60Gi        15Gi        14Gi       322Gi       314Gi
+Swap:             0B          0B          0B
+
+====== GPU Information (if available) ======
+Sun May  4 00:58:05 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA TITAN RTX               On  | 00000000:61:00.0 Off |                  N/A |
+| 41%   28C    P8              11W / 280W |     15MiB / 24576MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     29134      G   /usr/libexec/Xorg                            13MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Result: <Invalid>
+Generating '/tmp/nsys-report-0af1.qdstrm'
+[1/8] [0%                          ] fib_iterative-on-titanrtx.nsys-rep[1/8] [0%                          ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===22%                      ] fib_iterative-on-titanrtx.nsys-rep[1/8] [=====31%                    ] fib_iterative-on-titanrtx.nsys-rep[1/8] [========40%                 ] fib_iterative-on-titanrtx.nsys-rep[1/8] [========41%                 ] fib_iterative-on-titanrtx.nsys-rep[1/8] [========42%                 ] fib_iterative-on-titanrtx.nsys-rep[1/8] [=========44%                ] fib_iterative-on-titanrtx.nsys-rep[1/8] [==========47%               ] fib_iterative-on-titanrtx.nsys-rep[1/8] [==========48%               ] fib_iterative-on-titanrtx.nsys-rep[1/8] [==========49%               ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===========50%              ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===========51%              ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===========52%              ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===========53%              ] fib_iterative-on-titanrtx.nsys-rep[1/8] [============55%             ] fib_iterative-on-titanrtx.nsys-rep[1/8] [=============60%            ] fib_iterative-on-titanrtx.nsys-rep[1/8] [===============66%          ] fib_iterative-on-titanrtx.nsys-rep[1/8] [======================92%   ] fib_iterative-on-titanrtx.nsys-rep[1/8] [========================98% ] fib_iterative-on-titanrtx.nsys-rep[1/8] [========================100%] fib_iterative-on-titanrtx.nsys-rep[1/8] [========================100%] fib_iterative-on-titanrtx.nsys-rep
+[2/8] [0%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [1%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [2%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [3%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [4%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [5%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [6%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [7%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [8%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [9%                          ] fib_iterative-on-titanrtx.sqlite[2/8] [10%                         ] fib_iterative-on-titanrtx.sqlite[2/8] [11%                         ] fib_iterative-on-titanrtx.sqlite[2/8] [12%                         ] fib_iterative-on-titanrtx.sqlite[2/8] [13%                         ] fib_iterative-on-titanrtx.sqlite[2/8] [14%                         ] fib_iterative-on-titanrtx.sqlite[2/8] [=15%                        ] fib_iterative-on-titanrtx.sqlite[2/8] [=16%                        ] fib_iterative-on-titanrtx.sqlite[2/8] [=17%                        ] fib_iterative-on-titanrtx.sqlite[2/8] [==18%                       ] fib_iterative-on-titanrtx.sqlite[2/8] [==19%                       ] fib_iterative-on-titanrtx.sqlite[2/8] [==20%                       ] fib_iterative-on-titanrtx.sqlite[2/8] [==21%                       ] fib_iterative-on-titanrtx.sqlite[2/8] [===22%                      ] fib_iterative-on-titanrtx.sqlite[2/8] [===23%                      ] fib_iterative-on-titanrtx.sqlite[2/8] [===24%                      ] fib_iterative-on-titanrtx.sqlite[2/8] [====25%                     ] fib_iterative-on-titanrtx.sqlite[2/8] [====26%                     ] fib_iterative-on-titanrtx.sqlite[2/8] [====27%                     ] fib_iterative-on-titanrtx.sqlite[2/8] [====28%                     ] fib_iterative-on-titanrtx.sqlite[2/8] [=====29%                    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====30%                    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====31%                    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====32%                    ] fib_iterative-on-titanrtx.sqlite[2/8] [======33%                   ] fib_iterative-on-titanrtx.sqlite[2/8] [======34%                   ] fib_iterative-on-titanrtx.sqlite[2/8] [======35%                   ] fib_iterative-on-titanrtx.sqlite[2/8] [=======36%                  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======37%                  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======38%                  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======39%                  ] fib_iterative-on-titanrtx.sqlite[2/8] [========40%                 ] fib_iterative-on-titanrtx.sqlite[2/8] [========41%                 ] fib_iterative-on-titanrtx.sqlite[2/8] [========42%                 ] fib_iterative-on-titanrtx.sqlite[2/8] [=========43%                ] fib_iterative-on-titanrtx.sqlite[2/8] [=========44%                ] fib_iterative-on-titanrtx.sqlite[2/8] [=========45%                ] fib_iterative-on-titanrtx.sqlite[2/8] [=========46%                ] fib_iterative-on-titanrtx.sqlite[2/8] [==========47%               ] fib_iterative-on-titanrtx.sqlite[2/8] [==========48%               ] fib_iterative-on-titanrtx.sqlite[2/8] [==========49%               ] fib_iterative-on-titanrtx.sqlite[2/8] [===========50%              ] fib_iterative-on-titanrtx.sqlite[2/8] [===========51%              ] fib_iterative-on-titanrtx.sqlite[2/8] [===========52%              ] fib_iterative-on-titanrtx.sqlite[2/8] [===========53%              ] fib_iterative-on-titanrtx.sqlite[2/8] [============54%             ] fib_iterative-on-titanrtx.sqlite[2/8] [============55%             ] fib_iterative-on-titanrtx.sqlite[2/8] [============56%             ] fib_iterative-on-titanrtx.sqlite[2/8] [============57%             ] fib_iterative-on-titanrtx.sqlite[2/8] [=============58%            ] fib_iterative-on-titanrtx.sqlite[2/8] [=============59%            ] fib_iterative-on-titanrtx.sqlite[2/8] [=============60%            ] fib_iterative-on-titanrtx.sqlite[2/8] [==============61%           ] fib_iterative-on-titanrtx.sqlite[2/8] [==============62%           ] fib_iterative-on-titanrtx.sqlite[2/8] [==============63%           ] fib_iterative-on-titanrtx.sqlite[2/8] [==============64%           ] fib_iterative-on-titanrtx.sqlite[2/8] [===============65%          ] fib_iterative-on-titanrtx.sqlite[2/8] [===============66%          ] fib_iterative-on-titanrtx.sqlite[2/8] [===============67%          ] fib_iterative-on-titanrtx.sqlite[2/8] [================68%         ] fib_iterative-on-titanrtx.sqlite[2/8] [================69%         ] fib_iterative-on-titanrtx.sqlite[2/8] [================70%         ] fib_iterative-on-titanrtx.sqlite[2/8] [================71%         ] fib_iterative-on-titanrtx.sqlite[2/8] [=================72%        ] fib_iterative-on-titanrtx.sqlite[2/8] [=================73%        ] fib_iterative-on-titanrtx.sqlite[2/8] [=================74%        ] fib_iterative-on-titanrtx.sqlite[2/8] [==================75%       ] fib_iterative-on-titanrtx.sqlite[2/8] [==================76%       ] fib_iterative-on-titanrtx.sqlite[2/8] [==================77%       ] fib_iterative-on-titanrtx.sqlite[2/8] [==================78%       ] fib_iterative-on-titanrtx.sqlite[2/8] [===================79%      ] fib_iterative-on-titanrtx.sqlite[2/8] [===================80%      ] fib_iterative-on-titanrtx.sqlite[2/8] [===================81%      ] fib_iterative-on-titanrtx.sqlite[2/8] [===================82%      ] fib_iterative-on-titanrtx.sqlite[2/8] [====================83%     ] fib_iterative-on-titanrtx.sqlite[2/8] [====================84%     ] fib_iterative-on-titanrtx.sqlite[2/8] [====================85%     ] fib_iterative-on-titanrtx.sqlite[2/8] [=====================86%    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====================87%    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====================88%    ] fib_iterative-on-titanrtx.sqlite[2/8] [=====================89%    ] fib_iterative-on-titanrtx.sqlite[2/8] [======================90%   ] fib_iterative-on-titanrtx.sqlite[2/8] [======================91%   ] fib_iterative-on-titanrtx.sqlite[2/8] [======================92%   ] fib_iterative-on-titanrtx.sqlite[2/8] [=======================93%  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======================94%  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======================95%  ] fib_iterative-on-titanrtx.sqlite[2/8] [=======================96%  ] fib_iterative-on-titanrtx.sqlite[2/8] [========================97% ] fib_iterative-on-titanrtx.sqlite[2/8] [========================98% ] fib_iterative-on-titanrtx.sqlite[2/8] [========================99% ] fib_iterative-on-titanrtx.sqlite[2/8] [========================100%] fib_iterative-on-titanrtx.sqlite[2/8] [========================100%] fib_iterative-on-titanrtx.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)      Min (ns)     Max (ns)     StdDev (ns)        Name     
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -------------  --------------
+     30.9      564,650,012          1  564,650,012.0  564,650,012.0  564,650,012  564,650,012            0.0  waitpid       
+     28.8      526,705,911         22   23,941,177.8        2,027.0          958  514,056,794  109,496,489.7  read          
+     21.0      384,737,764          1  384,737,764.0  384,737,764.0  384,737,764  384,737,764            0.0  sem_wait      
+     10.9      199,356,851         16   12,459,803.2    3,551,567.5        2,115   84,993,187   23,244,392.4  poll          
+      5.9      107,371,811        557      192,768.1       28,515.0        1,003   30,532,740    1,592,919.7  ioctl         
+      0.9       16,524,780          7    2,360,682.9      583,959.0          222   11,883,241    4,313,048.8  fread         
+      0.7       11,948,484         60      199,141.4        8,435.5        1,905   10,133,074    1,309,739.3  open64        
+      0.4        7,246,075         43      168,513.4        5,968.0        2,558    5,612,710      871,815.8  fopen         
+      0.2        3,543,588         58       61,096.3        1,002.0          806    2,728,802      369,851.1  fcntl         
+      0.1        2,476,423         21      117,924.9       31,392.0          962    1,267,544      289,128.6  write         
+      0.1        2,086,472          5      417,294.4      527,034.0      122,943      728,604      273,993.0  pthread_create
+      0.1        1,856,397         34       54,599.9        8,025.5        4,237    1,212,806      205,511.1  mmap64        
+      0.0          230,063         21       10,955.4        7,965.0        1,901       61,475       13,091.1  mmap          
+      0.0          103,927         68        1,528.3           41.0           39       66,414        8,370.3  fgets         
+      0.0           76,851         36        2,134.8        1,772.5        1,265        9,314        1,335.2  fclose        
+      0.0           64,350         13        4,950.0        4,885.0        2,157        8,026        2,049.1  munmap        
+      0.0           39,460          6        6,576.7        5,322.0        2,291       11,778        3,874.0  open          
+      0.0           24,341          2       12,170.5       12,170.5       10,485       13,856        2,383.7  pipe2         
+      0.0           22,363          2       11,181.5       11,181.5        9,626       12,737        2,199.8  socket        
+      0.0           15,392          1       15,392.0       15,392.0       15,392       15,392            0.0  connect       
+      0.0           12,014          3        4,004.7        4,433.0        2,603        4,978        1,244.1  mprotect      
+      0.0            8,018          1        8,018.0        8,018.0        8,018        8,018            0.0  fopen64       
+      0.0            7,304          8          913.0          949.5          739        1,073          132.1  dup           
+      0.0            6,645          8          830.6          832.5          723          964           85.8  sigaction     
+      0.0            5,935          2        2,967.5        2,967.5        2,892        3,043          106.8  signal        
+      0.0            3,006          1        3,006.0        3,006.0        3,006        3,006            0.0  bind          
+      0.0            1,502          1        1,502.0        1,502.0        1,502        1,502            0.0  listen        
+      0.0            1,353         10          135.3           35.5           32          564          208.3  fflush        
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)    Max (ns)     StdDev (ns)            Name         
+ --------  ---------------  ---------  -------------  -------------  ---------  -----------  -------------  ----------------------
+     97.9      226,619,571          2  113,309,785.5  113,309,785.5  5,440,164  221,179,407  152,550,681.7  cudaMemcpyToSymbol    
+      1.7        3,914,104          5      782,820.8       53,968.0      4,961    3,766,957    1,668,370.9  cudaLaunchKernel      
+      0.3          752,052          1      752,052.0      752,052.0    752,052      752,052            0.0  cudaMalloc            
+      0.0           69,672          6       11,612.0       10,266.0      5,348       23,157        6,022.4  cudaMemcpy            
+      0.0            6,975          1        6,975.0        6,975.0      6,975        6,975            0.0  cudaDeviceSynchronize 
+      0.0            1,092          1        1,092.0        1,092.0      1,092        1,092            0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                   Name                 
+ --------  ---------------  ---------  ---------  ---------  --------  --------  -----------  --------------------------------------
+     82.6          446,813          1  446,813.0  446,813.0   446,813   446,813          0.0  initialize(GNet *)                    
+     16.6           89,727          1   89,727.0   89,727.0    89,727    89,727          0.0  print_result(GNet *)                  
+      0.5            2,495          1    2,495.0    2,495.0     2,495     2,495          0.0  inbetween(GNet *)                     
+      0.4            2,112          1    2,112.0    2,112.0     2,112     2,112          0.0  boot_redex(GNet *, unsigned long long)
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)      Operation     
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ------------------
+     99.9       10,381,715      3  3,460,571.7  4,910,235.0       448  5,471,032  3,009,645.4  [CUDA memcpy HtoD]
+      0.1            7,456      5      1,491.2      1,440.0     1,280      1,664        157.7  [CUDA memcpy DtoH]
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+     51.380      3    17.127    25.690     0.000    25.690       14.832  [CUDA memcpy HtoD]
+      0.000      5     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Generated:
+    /oscar/home/igordon/cs1952y_final/out/fib_iterative-on-titanrtx.nsys-rep
+    /oscar/home/igordon/cs1952y_final/out/fib_iterative-on-titanrtx.sqlite

@@ -1,0 +1,5 @@
+    Updating crates.io index
+     Ignored package `hvm v2.0.22` is already installed, use --force to override
+    Updating crates.io index
+     Ignored package `bend-lang v0.2.38` is already installed, use --force to override
+slurmstepd: error: *** JOB 11244617 ON gpu2007 CANCELLED AT 2025-05-03T10:03:23 ***
