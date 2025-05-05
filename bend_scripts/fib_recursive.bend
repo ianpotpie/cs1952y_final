@@ -13,12 +13,6 @@ def fib_recursive(n: u24) -> u24:
       return fib_recursive(n-2) + fib_recursive(n-2 + 1)
 
 def main() -> u24:
-  # With the iterative version, we can calculate large fibonacci numbers
-  # While with the recursive version, we will quickly run out of memory.
-  # Note that for numbers larger than 36 the result will overflow the space of the 24-bit integer.
-  # But we can run any number we want reasonably fast.
-  # return fib_iterative(30)
-
   # With the recursive version we create a tree with exponential size.
   # For numbers larger than ~45, this will hit the maximum HVM memory and crash.
   # Try uncommenting and running this line and compare the execution time.

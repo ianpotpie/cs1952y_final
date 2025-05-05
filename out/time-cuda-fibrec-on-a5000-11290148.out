@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11290148
+##  Job Name : [none]
+##  Nodelist : gpu2602
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Mon May  5 03:23:53 PM EDT 2025
+###############################################################################

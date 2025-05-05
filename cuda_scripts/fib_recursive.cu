@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 // CUDA kernel for recursive Fibonacci with exactly the same pattern as your Bend code
 __device__ unsigned int fib_recursive_device(unsigned int n) {
     if (n == 0) return 0;
@@ -9,11 +8,9 @@ __device__ unsigned int fib_recursive_device(unsigned int n) {
     // Matching the exact pattern in your Bend code: fib_recursive(n-2) + fib_recursive(n-2 + 1)
     return fib_recursive_device(n-2) + fib_recursive_device(n-2 + 1);
 }
-
 __global__ void fib_recursive_kernel(unsigned int n, unsigned int *result) {
     *result = fib_recursive_device(n);
 }
-
 // CUDA kernel for iterative Fibonacci
 __global__ void fib_iterative_kernel(unsigned int n, unsigned int *result) {
     if (n <= 1) {
@@ -30,7 +27,6 @@ __global__ void fib_iterative_kernel(unsigned int n, unsigned int *result) {
     
     *result = b;
 }
-
 int main(int argc, char *argv[]) {
     // Default to calculating Fibonacci of 5 if no argument is provided
     unsigned int n = 43;

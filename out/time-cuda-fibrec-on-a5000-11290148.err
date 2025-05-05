@@ -1,0 +1,20 @@
+    Updating crates.io index
+  Installing hvm v2.0.22
+    Updating crates.io index
+     Locking 31 packages to latest compatible versions
+      Adding hermit-abi v0.3.9 (latest: v0.5.0)
+      Adding windows-targets v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_msvc v0.52.6 (latest: v0.53.0)
+   Compiling libc v0.2.172
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.6
+   Compiling anstyle-query v1.1.2
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling colorchoice v1.0.3
