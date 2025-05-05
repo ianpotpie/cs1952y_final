@@ -534,6 +534,15 @@ def test_data():
 [5.2,2.7,3.9,1.4],
 [5.0,3.3,1.4,0.2]]
 
+
+def train_labels():
+  return [1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 
+1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+
+def test_labels():
+  return [1,1,1,0,0,0,1,1,1,0,0,1,1,0,1,0,0,0,1,0]
+
+
 def main() -> IO(List):
 
 
@@ -547,13 +556,12 @@ def main() -> IO(List):
 
   training_data = train_data()
 
-  training_labels = [1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 
-1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+  training_labels = train_labels()
 
 
   testing_data = test_data()
 
-  testing_labels = [1,1,1,0,0,0,1,1,1,0,0,1,1,0,1,0,0,0,1,0]
+  testing_labels = test_labels()
 
   weights, bias = epochs(training_data, training_labels, initial_bias, initial_weights, 500)
 
