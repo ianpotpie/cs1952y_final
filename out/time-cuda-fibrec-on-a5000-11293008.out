@@ -1,0 +1,206 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11293008
+##  Job Name : time_cuda_fibrec.sh
+##  Nodelist : gpu2263
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Mon May  5 04:15:55 PM EDT 2025
+###############################################################################
+
+====== GPU Information (if available) ======
+Mon May  5 16:16:56 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A5000               On  | 00000000:43:00.0 Off |                  Off |
+| 30%   33C    P8              18W / 230W |     16MiB / 24564MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     50755      G   /usr/libexec/Xorg                             8MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Number of arguments: 2
+Argument received: '1', converted to: 1
+Fibonacci(1) = 1 (Recursive method)
+Time taken: 0.000106 seconds
+Number of arguments: 2
+Argument received: '2', converted to: 2
+Fibonacci(2) = 1 (Recursive method)
+Time taken: 0.000097 seconds
+Number of arguments: 2
+Argument received: '3', converted to: 3
+Fibonacci(3) = 2 (Recursive method)
+Time taken: 0.000097 seconds
+Number of arguments: 2
+Argument received: '4', converted to: 4
+Fibonacci(4) = 3 (Recursive method)
+Time taken: 0.000097 seconds
+Number of arguments: 2
+Argument received: '5', converted to: 5
+Fibonacci(5) = 5 (Recursive method)
+Time taken: 0.000103 seconds
+Number of arguments: 2
+Argument received: '6', converted to: 6
+Fibonacci(6) = 8 (Recursive method)
+Time taken: 0.000102 seconds
+Number of arguments: 2
+Argument received: '7', converted to: 7
+Fibonacci(7) = 13 (Recursive method)
+Time taken: 0.000115 seconds
+Number of arguments: 2
+Argument received: '8', converted to: 8
+Fibonacci(8) = 21 (Recursive method)
+Time taken: 0.000116 seconds
+Number of arguments: 2
+Argument received: '9', converted to: 9
+Fibonacci(9) = 34 (Recursive method)
+Time taken: 0.000121 seconds
+Number of arguments: 2
+Argument received: '10', converted to: 10
+Fibonacci(10) = 55 (Recursive method)
+Time taken: 0.000121 seconds
+Number of arguments: 2
+Argument received: '11', converted to: 11
+Fibonacci(11) = 89 (Recursive method)
+Time taken: 0.000132 seconds
+Number of arguments: 2
+Argument received: '12', converted to: 12
+Fibonacci(12) = 144 (Recursive method)
+Time taken: 0.000167 seconds
+Number of arguments: 2
+Argument received: '13', converted to: 13
+Fibonacci(13) = 233 (Recursive method)
+Time taken: 0.000196 seconds
+Number of arguments: 2
+Argument received: '14', converted to: 14
+Fibonacci(14) = 377 (Recursive method)
+Time taken: 0.000250 seconds
+Number of arguments: 2
+Argument received: '15', converted to: 15
+Fibonacci(15) = 610 (Recursive method)
+Time taken: 0.000354 seconds
+Number of arguments: 2
+Argument received: '16', converted to: 16
+Fibonacci(16) = 987 (Recursive method)
+Time taken: 0.000501 seconds
+Number of arguments: 2
+Argument received: '17', converted to: 17
+Fibonacci(17) = 1597 (Recursive method)
+Time taken: 0.000742 seconds
+Number of arguments: 2
+Argument received: '18', converted to: 18
+Fibonacci(18) = 2584 (Recursive method)
+Time taken: 0.001148 seconds
+Number of arguments: 2
+Argument received: '19', converted to: 19
+Fibonacci(19) = 4181 (Recursive method)
+Time taken: 0.001792 seconds
+Number of arguments: 2
+Argument received: '20', converted to: 20
+Fibonacci(20) = 6765 (Recursive method)
+Time taken: 0.002843 seconds
+Number of arguments: 2
+Argument received: '21', converted to: 21
+Fibonacci(21) = 10946 (Recursive method)
+Time taken: 0.004554 seconds
+Number of arguments: 2
+Argument received: '22', converted to: 22
+Fibonacci(22) = 17711 (Recursive method)
+Time taken: 0.007305 seconds
+Number of arguments: 2
+Argument received: '23', converted to: 23
+Fibonacci(23) = 28657 (Recursive method)
+Time taken: 0.011754 seconds
+Number of arguments: 2
+Argument received: '24', converted to: 24
+Fibonacci(24) = 46368 (Recursive method)
+Time taken: 0.018964 seconds
+Number of arguments: 2
+Argument received: '25', converted to: 25
+Fibonacci(25) = 75025 (Recursive method)
+Time taken: 0.030612 seconds
+Number of arguments: 2
+Argument received: '26', converted to: 26
+Fibonacci(26) = 121393 (Recursive method)
+Time taken: 0.049477 seconds
+Number of arguments: 2
+Argument received: '27', converted to: 27
+Fibonacci(27) = 196418 (Recursive method)
+Time taken: 0.079996 seconds
+Number of arguments: 2
+Argument received: '28', converted to: 28
+Fibonacci(28) = 317811 (Recursive method)
+Time taken: 0.129403 seconds
+Number of arguments: 2
+Argument received: '29', converted to: 29
+Fibonacci(29) = 514229 (Recursive method)
+Time taken: 0.183218 seconds
+Number of arguments: 2
+Argument received: '30', converted to: 30
+Fibonacci(30) = 832040 (Recursive method)
+Time taken: 0.296620 seconds
+Number of arguments: 2
+Argument received: '31', converted to: 31
+Fibonacci(31) = 1346269 (Recursive method)
+Time taken: 0.479932 seconds
+Number of arguments: 2
+Argument received: '32', converted to: 32
+Fibonacci(32) = 2178309 (Recursive method)
+Time taken: 0.776494 seconds
+Number of arguments: 2
+Argument received: '33', converted to: 33
+Fibonacci(33) = 3524578 (Recursive method)
+Time taken: 1.256415 seconds
+Number of arguments: 2
+Argument received: '34', converted to: 34
+Fibonacci(34) = 5702887 (Recursive method)
+Time taken: 2.032904 seconds
+Number of arguments: 2
+Argument received: '35', converted to: 35
+Fibonacci(35) = 9227465 (Recursive method)
+Time taken: 3.289160 seconds
+Number of arguments: 2
+Argument received: '36', converted to: 36
+Fibonacci(36) = 14930352 (Recursive method)
+Time taken: 5.322080 seconds
+Number of arguments: 2
+Argument received: '37', converted to: 37
+Fibonacci(37) = 24157817 (Recursive method)
+Time taken: 8.658546 seconds
+Number of arguments: 2
+Argument received: '38', converted to: 38
+Fibonacci(38) = 39088169 (Recursive method)
+Time taken: 14.038224 seconds
+Number of arguments: 2
+Argument received: '39', converted to: 39
+Fibonacci(39) = 63245986 (Recursive method)
+Time taken: 22.714493 seconds
+Number of arguments: 2
+Argument received: '40', converted to: 40
+Fibonacci(40) = 102334155 (Recursive method)
+Time taken: 36.947048 seconds
+Number of arguments: 2
+Argument received: '41', converted to: 41
+Fibonacci(41) = 165580141 (Recursive method)
+Time taken: 59.880537 seconds
+Number of arguments: 2
+Argument received: '42', converted to: 42
+Fibonacci(42) = 267914296 (Recursive method)
+Time taken: 96.918070 seconds
+Number of arguments: 2
+Argument received: '43', converted to: 43
+CUDA Error: an illegal memory access was encountered
+Fibonacci(43) = 1 (Recursive method)
+Time taken: 157.044369 seconds

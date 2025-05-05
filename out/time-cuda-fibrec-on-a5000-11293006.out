@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11293006
+##  Job Name : time_cuda_fibrec.sh
+##  Nodelist : gpu2260
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Mon May  5 04:15:19 PM EDT 2025
+###############################################################################
