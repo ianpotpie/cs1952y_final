@@ -1,13 +1,10 @@
 import numpy as np
 
-
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-
 def sigmoid_derivative(x):
     return x * (1 - x)
-
 
 def forward_pass(input_matrix, weights_matrix, bias_vector):
     
@@ -15,7 +12,6 @@ def forward_pass(input_matrix, weights_matrix, bias_vector):
     
     activated_output = sigmoid(weighted_sum)
     return activated_output
-
 
 def backwards_pass(output_matrix, input_matrix, true_values, weights_matrix, bias_vector, learning_rate=0.01):
     
@@ -47,7 +43,7 @@ input_size = 4
 output_size = 1 
 
 
-np.random.seed(42)
+np.random.seed(67)
 weights = np.random.randn(input_size, output_size) 
 bias = np.random.randn(1, output_size)
 
@@ -193,8 +189,6 @@ testing_data = [[6.3,3.3,4.7,1.6],
 [5.0,3.3,1.4,0.2]]
 
 testing_labels = [1,1,1,0,0,0,1,1,1,0,0,1,1,0,1,0,0,0,1,0]
-
-
 
 
 weights, bias = train(training_data, training_labels, weights, bias, epochs, learning_rate)
