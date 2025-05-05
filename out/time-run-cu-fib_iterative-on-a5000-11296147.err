@@ -1,0 +1,15 @@
+    Updating crates.io index
+  Installing hvm v2.0.22
+    Updating crates.io index
+     Locking 31 packages to latest compatible versions
+      Adding hermit-abi v0.3.9 (latest: v0.5.0)
+      Adding windows-targets v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_msvc v0.52.6 (latest: v0.53.0)
+slurmstepd: error: *** JOB 11296147 ON gpu2605 CANCELLED AT 2025-05-05T18:43:53 ***

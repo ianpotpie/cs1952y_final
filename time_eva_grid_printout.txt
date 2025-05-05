@@ -1,0 +1,90 @@
+====== Starting Grid Evaluation ======
+Scripts: fib_iterative fib_recursive bitonic_sort graphic
+GPU Types: a40 geforce3090 a5000 a5500 a6000 titanrtx quadrortx v100
+====================================
+Submitting: fib_iterative on a40
+  Submission failed
+Submitting: fib_iterative on geforce3090
+Submitted batch job 11296152
+  Submission successful
+Submitting: fib_iterative on a5000
+Submitted batch job 11296153
+  Submission successful
+Submitting: fib_iterative on a5500
+Submitted batch job 11296154
+  Submission successful
+Submitting: fib_iterative on a6000
+  Submission failed
+Submitting: fib_iterative on titanrtx
+Submitted batch job 11296156
+  Submission successful
+Submitting: fib_iterative on quadrortx
+Submitted batch job 11296157
+  Submission successful
+Submitting: fib_iterative on v100
+  Submission failed
+Submitting: fib_recursive on a40
+  Submission failed
+Submitting: fib_recursive on geforce3090
+Submitted batch job 11296160
+  Submission successful
+Submitting: fib_recursive on a5000
+Submitted batch job 11296161
+  Submission successful
+Submitting: fib_recursive on a5500
+Submitted batch job 11296162
+  Submission successful
+Submitting: fib_recursive on a6000
+  Submission failed
+Submitting: fib_recursive on titanrtx
+Submitted batch job 11296165
+  Submission successful
+Submitting: fib_recursive on quadrortx
+Submitted batch job 11296166
+  Submission successful
+Submitting: fib_recursive on v100
+  Submission failed
+Submitting: bitonic_sort on a40
+  Submission failed
+Submitting: bitonic_sort on geforce3090
+Submitted batch job 11296169
+  Submission successful
+Submitting: bitonic_sort on a5000
+Submitted batch job 11296170
+  Submission successful
+Submitting: bitonic_sort on a5500
+Submitted batch job 11296171
+  Submission successful
+Submitting: bitonic_sort on a6000
+  Submission failed
+Submitting: bitonic_sort on titanrtx
+Submitted batch job 11296213
+  Submission successful
+Submitting: bitonic_sort on quadrortx
+Submitted batch job 11296214
+  Submission successful
+Submitting: bitonic_sort on v100
+  Submission failed
+Submitting: graphic on a40
+  Submission failed
+Submitting: graphic on geforce3090
+Submitted batch job 11296217
+  Submission successful
+Submitting: graphic on a5000
+Submitted batch job 11296219
+  Submission successful
+Submitting: graphic on a5500
+Submitted batch job 11296220
+  Submission successful
+Submitting: graphic on a6000
+  Submission failed
+Submitting: graphic on titanrtx
+Submitted batch job 11296222
+  Submission successful
+Submitting: graphic on quadrortx
+Submitted batch job 11296223
+  Submission successful
+Submitting: graphic on v100
+  Submission failed
+====== Grid Evaluation Complete ======
+To monitor your jobs, use: squeue -u igordon

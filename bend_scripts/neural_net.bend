@@ -579,7 +579,7 @@ def main() -> IO(List):
   # return backwards_pass(forward, input_data, [[1]], initial_weights, initial_bias)
 
   # return train(training_data, training_labels, initial_bias, initial_weights, 0)
-  weights, bias = epochs(training_data, training_labels, initial_bias, initial_weights, 500)
+  weights, bias = epochs(training_data, training_labels, initial_bias, initial_weights, 10)
   # (test_data, test_labels, bias_vector, weights_matrix, row_index, correct_predictions, total_predictions):
   return test(testing_data, testing_labels, bias, weights, 0, 0, 0)
   # return train()

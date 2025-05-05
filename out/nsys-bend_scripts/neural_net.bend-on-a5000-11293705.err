@@ -1,0 +1,45 @@
+    Updating crates.io index
+  Installing hvm v2.0.22
+    Updating crates.io index
+     Locking 31 packages to latest compatible versions
+      Adding hermit-abi v0.3.9 (latest: v0.5.0)
+      Adding windows-targets v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_msvc v0.52.6 (latest: v0.53.0)
+   Compiling libc v0.2.172
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.6
+   Compiling shlex v1.3.0
+   Compiling anstyle-query v1.1.2
+   Compiling anstyle v1.0.10
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling colorchoice v1.0.3
+   Compiling anstream v0.6.18
+   Compiling cc v1.2.21
+   Compiling num_cpus v1.16.0
+   Compiling strsim v0.11.1
+   Compiling clap_lex v0.7.4
+   Compiling clap_builder v4.5.37
+   Compiling hvm v2.0.22
+   Compiling highlight_error v0.1.1
+   Compiling TSPL v0.0.13
+   Compiling clap v4.5.37
+    Finished `release` profile [optimized] target(s) in 52.90s
+   Replacing /users/igordon/.cargo/bin/hvm
+    Replaced package `hvm v2.0.22` with `hvm v2.0.22` (executable `hvm`)
+[4m[1m[31mErrors:[0m
+The file 'bend_scripts/bend_scripts/neural_net.bend.bend' was not found.
+
+Failed to create '/oscar/home/igordon/cs1952y_final/out/bend_scripts/neural_net.bend-on-a5000.nsys-rep': No such file or directory.
+Failed to create '/oscar/home/igordon/cs1952y_final/out/bend_scripts/neural_net.bend-on-a5000.sqlite': No such file or directory.
+SKIPPED: /tmp/nsys-report-4c5a.sqlite does not contain NV Tools Extension (NVTX) data.
+SKIPPED: /tmp/nsys-report-4c5a.sqlite does not contain CUDA trace data.
+SKIPPED: /tmp/nsys-report-4c5a.sqlite does not contain CUDA kernel data.
+SKIPPED: /tmp/nsys-report-4c5a.sqlite does not contain GPU memory data.
+SKIPPED: /tmp/nsys-report-4c5a.sqlite does not contain GPU memory data.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 3 ]; then
     echo "Usage: $0 <bend_script> <graphics_card> <note>"
     exit 1
 fi
@@ -49,6 +49,10 @@ else
     echo "No NVIDIA GPU available or nvidia-smi not found"
 fi
 
+echo -e "\n====== Note ======"
+echo -e "${NOTE}"
+
 echo -e "\n====== Program Output ======"
-nsys profile --stats=true -o out/${BEND_SCRIPT}-on-${GRAPHICS_CARD} bend run-cu bend_scripts/${BEND_SCRIPT}.bend -s
+echo -e "${BEND_SCRIPT}"
+nsys profile --stats=true -o out/${BEND_SCRIPT}-on-${GRAPHICS_CARD} bend run-rs bend_scripts/${BEND_SCRIPT}.bend -s
 EOF
