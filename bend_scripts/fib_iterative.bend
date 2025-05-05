@@ -14,4 +14,4 @@ def main() -> u24:
   # While with the recursive version, we will quickly run out of memory.
   # Note that for numbers larger than 36 the result will overflow the space of the 24-bit integer.
   # But we can run any number we want reasonably fast.
-  return fib_iterative(30)
+  return fib_iterative(45)

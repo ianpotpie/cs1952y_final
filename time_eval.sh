@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <bend_script> <graphics_card> <note>"
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <run_flag> <bend_script> <graphics_card>"
     exit 1
 fi
 
-BEND_SCRIPT=$1
-GRAPHICS_CARD=$2
-NOTE=$3
+FLAG=$1
+BEND_SCRIPT=$2
+GRAPHICS_CARD=$3
 
 # The pre-script ends
 sbatch << EOF
@@ -17,8 +17,8 @@ sbatch << EOF
 #SBATCH --mem=12G
 #SBATCH -t 1:00:00
 #SBATCH -N 1
-#SBATCH -o out/nsys-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.out
-#SBATCH -e out/nsys-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.err
+#SBATCH -o out/time-${FLAG}-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.out
+#SBATCH -e out/time-${FLAG}-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.err
 #SBATCH -C ${GRAPHICS_CARD}
 
 module load openssl/1.1.1t-u2rkdft
@@ -50,5 +50,5 @@ else
 fi
 
 echo -e "\n====== Program Output ======"
-nsys profile --stats=true -o out/${BEND_SCRIPT}-on-${GRAPHICS_CARD} bend run-cu bend_scripts/${BEND_SCRIPT}.bend -s
+time bend $FLAG bend_scripts/${BEND_SCRIPT}.bend
 EOF

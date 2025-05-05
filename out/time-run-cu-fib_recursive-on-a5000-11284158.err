@@ -1,0 +1,43 @@
+    Updating crates.io index
+  Installing hvm v2.0.22
+    Updating crates.io index
+     Locking 31 packages to latest compatible versions
+      Adding hermit-abi v0.3.9 (latest: v0.5.0)
+      Adding windows-targets v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_aarch64_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_i686_msvc v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnu v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_gnullvm v0.52.6 (latest: v0.53.0)
+      Adding windows_x86_64_msvc v0.52.6 (latest: v0.53.0)
+   Compiling libc v0.2.172
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.6
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling colorchoice v1.0.3
+   Compiling anstyle v1.0.10
+   Compiling anstyle-query v1.1.2
+   Compiling shlex v1.3.0
+   Compiling cc v1.2.21
+   Compiling anstream v0.6.18
+   Compiling num_cpus v1.16.0
+   Compiling clap_lex v0.7.4
+   Compiling strsim v0.11.1
+   Compiling clap_builder v4.5.37
+   Compiling hvm v2.0.22
+   Compiling highlight_error v0.1.1
+   Compiling TSPL v0.0.13
+   Compiling clap v4.5.37
+    Finished `release` profile [optimized] target(s) in 59.66s
+   Replacing /users/igordon/.cargo/bin/hvm
+    Replaced package `hvm v2.0.22` with `hvm v2.0.22` (executable `hvm`)
+[4m[1m[33mWarnings:[0m
+[1mDuring readback:[0m
+  Unable to interpret the HVM result as a valid Bend term. (Reached Root)
+
+
+real	0m56.804s
+user	0m8.642s
+sys	0m47.985s

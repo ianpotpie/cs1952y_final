@@ -64,6 +64,6 @@ ncu --target-processes all \
     --clock-control base \
     --import-source yes \
     -o "out/${BEND_SCRIPT}-on-${GRAPHICS_CARD}" \
-    bend run-cu bend_scripts/${BEND_SCRIPT}.bend
+    bend run-cu bend_scripts/${BEND_SCRIPT}
 
 EOF

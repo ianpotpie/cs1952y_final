@@ -1,0 +1,167 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 11287860
+##  Job Name : [none]
+##  Nodelist : gpu2258
+##      CPUs : 1
+##  Mem/Node : 12288 MB
+## Directory : /oscar/home/igordon/cs1952y_final
+##   Job Started : Mon May  5 01:53:30 PM EDT 2025
+###############################################################################
+====== Job and Node Information ======
+Job ID: 
+Node List: 
+Number of Nodes: 
+Number of Tasks: 
+CPUs per Task: 
+
+====== CPU Information ======
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Address sizes:                   43 bits physical, 48 bits virtual
+Byte Order:                      Little Endian
+CPU(s):                          64
+On-line CPU(s) list:             0-63
+Vendor ID:                       AuthenticAMD
+Model name:                      AMD EPYC 7532 32-Core Processor
+CPU family:                      23
+Model:                           49
+Thread(s) per core:              1
+Core(s) per socket:              32
+Socket(s):                       2
+Stepping:                        0
+Frequency boost:                 enabled
+CPU max MHz:                     2400.0000
+CPU min MHz:                     1500.0000
+BogoMIPS:                        4800.43
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
+Virtualization:                  AMD-V
+L1d cache:                       2 MiB (64 instances)
+L1i cache:                       2 MiB (64 instances)
+L2 cache:                        32 MiB (64 instances)
+L3 cache:                        512 MiB (32 instances)
+NUMA node(s):                    2
+NUMA node0 CPU(s):               0-31
+NUMA node1 CPU(s):               32-63
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Mmio stale data:   Not affected
+Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT disabled
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+
+====== Memory Information ======
+               total        used        free      shared  buff/cache   available
+Mem:           1.0Ti       124Gi        67Gi       8.9Gi       834Gi       881Gi
+Swap:             0B          0B          0B
+
+====== GPU Information (if available) ======
+Mon May  5 13:54:24 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA RTX A5000               On  | 00000000:44:00.0 Off |                  Off |
+| 30%   33C    P8              24W / 230W |     15MiB / 24564MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A     50824      G   /usr/libexec/Xorg                             8MiB |
++---------------------------------------------------------------------------------------+
+
+====== Program Output ======
+Successfully modified and saved to file
+Result: 7380601
+- ITRS: 979297527
+- LEAK: 19099888
+- TIME: 1.87s
+- MIPS: 522.35
+
+Generating '/tmp/nsys-report-8ad7.qdstrm'
+[1/8] [0%                          ] fib_recursive35.nsys-rep[1/8] [0%                          ] fib_recursive35.nsys-rep[1/8] [===========50%              ] fib_recursive35.nsys-rep[1/8] [========================100%] fib_recursive35.nsys-rep[1/8] [========================99% ] fib_recursive35.nsys-rep[1/8] [========================100%] fib_recursive35.nsys-rep[1/8] [12%                         ] fib_recursive35.nsys-rep[1/8] [13%                         ] fib_recursive35.nsys-rep[1/8] [14%                         ] fib_recursive35.nsys-rep[1/8] [=15%                        ] fib_recursive35.nsys-rep[1/8] [===23%                      ] fib_recursive35.nsys-rep[1/8] [======================90%   ] fib_recursive35.nsys-rep[1/8] [========================100%] fib_recursive35.nsys-rep[1/8] [========================100%] fib_recursive35.nsys-rep
+[2/8] [0%                          ] fib_recursive35.sqlite[2/8] [1%                          ] fib_recursive35.sqlite[2/8] [2%                          ] fib_recursive35.sqlite[2/8] [3%                          ] fib_recursive35.sqlite[2/8] [4%                          ] fib_recursive35.sqlite[2/8] [5%                          ] fib_recursive35.sqlite[2/8] [6%                          ] fib_recursive35.sqlite[2/8] [7%                          ] fib_recursive35.sqlite[2/8] [8%                          ] fib_recursive35.sqlite[2/8] [9%                          ] fib_recursive35.sqlite[2/8] [10%                         ] fib_recursive35.sqlite[2/8] [11%                         ] fib_recursive35.sqlite[2/8] [12%                         ] fib_recursive35.sqlite[2/8] [13%                         ] fib_recursive35.sqlite[2/8] [14%                         ] fib_recursive35.sqlite[2/8] [=15%                        ] fib_recursive35.sqlite[2/8] [=16%                        ] fib_recursive35.sqlite[2/8] [=17%                        ] fib_recursive35.sqlite[2/8] [==18%                       ] fib_recursive35.sqlite[2/8] [==19%                       ] fib_recursive35.sqlite[2/8] [==20%                       ] fib_recursive35.sqlite[2/8] [==21%                       ] fib_recursive35.sqlite[2/8] [===22%                      ] fib_recursive35.sqlite[2/8] [===23%                      ] fib_recursive35.sqlite[2/8] [===24%                      ] fib_recursive35.sqlite[2/8] [====25%                     ] fib_recursive35.sqlite[2/8] [====26%                     ] fib_recursive35.sqlite[2/8] [====27%                     ] fib_recursive35.sqlite[2/8] [====28%                     ] fib_recursive35.sqlite[2/8] [=====29%                    ] fib_recursive35.sqlite[2/8] [=====30%                    ] fib_recursive35.sqlite[2/8] [=====31%                    ] fib_recursive35.sqlite[2/8] [=====32%                    ] fib_recursive35.sqlite[2/8] [======33%                   ] fib_recursive35.sqlite[2/8] [======34%                   ] fib_recursive35.sqlite[2/8] [======35%                   ] fib_recursive35.sqlite[2/8] [=======36%                  ] fib_recursive35.sqlite[2/8] [=======37%                  ] fib_recursive35.sqlite[2/8] [=======38%                  ] fib_recursive35.sqlite[2/8] [=======39%                  ] fib_recursive35.sqlite[2/8] [========40%                 ] fib_recursive35.sqlite[2/8] [========41%                 ] fib_recursive35.sqlite[2/8] [========42%                 ] fib_recursive35.sqlite[2/8] [=========43%                ] fib_recursive35.sqlite[2/8] [=========44%                ] fib_recursive35.sqlite[2/8] [=========45%                ] fib_recursive35.sqlite[2/8] [=========46%                ] fib_recursive35.sqlite[2/8] [==========47%               ] fib_recursive35.sqlite[2/8] [==========48%               ] fib_recursive35.sqlite[2/8] [==========49%               ] fib_recursive35.sqlite[2/8] [===========50%              ] fib_recursive35.sqlite[2/8] [===========51%              ] fib_recursive35.sqlite[2/8] [===========52%              ] fib_recursive35.sqlite[2/8] [===========53%              ] fib_recursive35.sqlite[2/8] [============54%             ] fib_recursive35.sqlite[2/8] [============55%             ] fib_recursive35.sqlite[2/8] [============56%             ] fib_recursive35.sqlite[2/8] [============57%             ] fib_recursive35.sqlite[2/8] [=============58%            ] fib_recursive35.sqlite[2/8] [=============59%            ] fib_recursive35.sqlite[2/8] [=============60%            ] fib_recursive35.sqlite[2/8] [==============61%           ] fib_recursive35.sqlite[2/8] [==============62%           ] fib_recursive35.sqlite[2/8] [==============63%           ] fib_recursive35.sqlite[2/8] [==============64%           ] fib_recursive35.sqlite[2/8] [===============65%          ] fib_recursive35.sqlite[2/8] [===============66%          ] fib_recursive35.sqlite[2/8] [===============67%          ] fib_recursive35.sqlite[2/8] [================68%         ] fib_recursive35.sqlite[2/8] [================69%         ] fib_recursive35.sqlite[2/8] [================70%         ] fib_recursive35.sqlite[2/8] [================71%         ] fib_recursive35.sqlite[2/8] [=================72%        ] fib_recursive35.sqlite[2/8] [=================73%        ] fib_recursive35.sqlite[2/8] [=================74%        ] fib_recursive35.sqlite[2/8] [==================75%       ] fib_recursive35.sqlite[2/8] [==================76%       ] fib_recursive35.sqlite[2/8] [==================77%       ] fib_recursive35.sqlite[2/8] [==================78%       ] fib_recursive35.sqlite[2/8] [===================79%      ] fib_recursive35.sqlite[2/8] [===================80%      ] fib_recursive35.sqlite[2/8] [===================81%      ] fib_recursive35.sqlite[2/8] [===================82%      ] fib_recursive35.sqlite[2/8] [====================83%     ] fib_recursive35.sqlite[2/8] [====================84%     ] fib_recursive35.sqlite[2/8] [====================85%     ] fib_recursive35.sqlite[2/8] [=====================86%    ] fib_recursive35.sqlite[2/8] [=====================87%    ] fib_recursive35.sqlite[2/8] [=====================88%    ] fib_recursive35.sqlite[2/8] [=====================89%    ] fib_recursive35.sqlite[2/8] [======================90%   ] fib_recursive35.sqlite[2/8] [======================91%   ] fib_recursive35.sqlite[2/8] [======================92%   ] fib_recursive35.sqlite[2/8] [=======================93%  ] fib_recursive35.sqlite[2/8] [=======================94%  ] fib_recursive35.sqlite[2/8] [=======================95%  ] fib_recursive35.sqlite[2/8] [=======================96%  ] fib_recursive35.sqlite[2/8] [========================97% ] fib_recursive35.sqlite[2/8] [========================98% ] fib_recursive35.sqlite[2/8] [========================99% ] fib_recursive35.sqlite[2/8] [========================100%] fib_recursive35.sqlite[2/8] [========================100%] fib_recursive35.sqlite
+[3/8] Executing 'nvtx_sum' stats report
+[4/8] Executing 'osrt_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls     Avg (ns)         Med (ns)        Min (ns)       Max (ns)      StdDev (ns)            Name         
+ --------  ---------------  ---------  ---------------  ---------------  -------------  -------------  -------------  ----------------------
+     22.4    2,322,717,033          1  2,322,717,033.0  2,322,717,033.0  2,322,717,033  2,322,717,033            0.0  waitpid               
+     21.9    2,266,672,495         26     87,179,711.3          2,225.0            390  2,250,510,997  441,245,898.1  read                  
+     20.5    2,126,493,154          1  2,126,493,154.0  2,126,493,154.0  2,126,493,154  2,126,493,154            0.0  sem_wait              
+     19.3    2,002,707,582         34     58,903,164.2    100,034,487.5          1,350    100,112,703   46,031,690.8  poll                  
+     14.5    1,500,176,500          3    500,058,833.3    500,058,150.0    500,056,670    500,061,680        2,574.0  pthread_cond_timedwait
+      1.2      120,608,642        565        213,466.6         46,011.0            510     30,311,930    1,487,161.5  ioctl                 
+      0.2       19,072,430         66        288,976.2          6,430.5          1,180     15,462,062    1,919,176.6  open64                
+      0.0        1,969,580          7        281,368.6          9,971.0            180        952,228      407,890.9  fread                 
+      0.0        1,968,937         58         33,947.2            460.0            230      1,251,561      185,953.0  fcntl                 
+      0.0        1,786,817         46         38,843.8          4,430.5          2,000        855,067      147,026.3  fopen                 
+      0.0        1,584,155         16         99,009.7         18,640.0            420        691,127      210,891.9  write                 
+      0.0        1,329,692         34         39,108.6          7,210.0          2,400        747,267      126,245.7  mmap64                
+      0.0          937,598          5        187,519.6        128,341.0         85,410        331,763      117,350.8  pthread_create        
+      0.0          541,506      8,942             60.6             50.0             40          6,360           89.1  fflush                
+      0.0          163,981         21          7,808.6          3,820.0          1,490         39,800        9,188.0  mmap                  
+      0.0           91,151         65          1,402.3             60.0             50         58,221        7,525.7  fgets                 
+      0.0           57,171         15          3,811.4          3,090.0          1,100          9,690        2,282.8  munmap                
+      0.0           52,840         39          1,354.9          1,180.0            680          5,840          815.2  fclose                
+      0.0           43,160          6          7,193.3          6,055.0          1,910         18,100        5,766.1  open                  
+      0.0           28,210          2         14,105.0         14,105.0         13,190         15,020        1,294.0  pipe2                 
+      0.0           26,150          2         13,075.0         13,075.0          4,080         22,070       12,720.9  socket                
+      0.0           20,580          1         20,580.0         20,580.0         20,580         20,580            0.0  connect               
+      0.0           12,530          3          4,176.7          2,980.0          2,730          6,820        2,292.6  mprotect              
+      0.0            5,280          1          5,280.0          5,280.0          5,280          5,280            0.0  fopen64               
+      0.0            4,180          2          2,090.0          2,090.0          2,090          2,090            0.0  signal                
+      0.0            3,470          8            433.8            335.0            240            740          204.3  dup                   
+      0.0            2,670          8            333.8            325.0            220            470           88.3  sigaction             
+      0.0            1,831          1          1,831.0          1,831.0          1,831          1,831            0.0  bind                  
+      0.0            1,150          1          1,150.0          1,150.0          1,150          1,150            0.0  listen                
+
+[5/8] Executing 'cuda_api_sum' stats report
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)      Med (ns)    Min (ns)    Max (ns)     StdDev (ns)            Name         
+ --------  ---------------  ---------  ------------  ------------  ---------  -----------  -------------  ----------------------
+     90.4    1,877,440,866      2,222     844,932.9     133,076.5      6,871    8,876,531    1,229,363.8  cudaMemcpy            
+      8.8      183,281,760          2  91,640,880.0  91,640,880.0  1,858,317  181,423,443  126,971,718.3  cudaMemcpyToSymbol    
+      0.7       14,955,671      2,219       6,739.8       4,510.0      3,890    2,418,302       64,079.1  cudaLaunchKernel      
+      0.0          606,896          1     606,896.0     606,896.0    606,896      606,896            0.0  cudaMalloc            
+      0.0           11,450          1      11,450.0      11,450.0     11,450       11,450            0.0  cudaDeviceSynchronize 
+      0.0            2,220          1       2,220.0       2,220.0      2,220        2,220            0.0  cuModuleGetLoadingMode
+
+[6/8] Executing 'cuda_gpu_kern_sum' stats report
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)                   Name                 
+ --------  ---------------  ---------  -----------  -----------  --------  ---------  -----------  --------------------------------------
+     99.9    1,843,580,518      1,108  1,663,881.3  1,335,732.0   389,569  8,862,139  1,276,905.5  evaluator(GNet *)                     
+      0.1        1,610,971      1,108      1,453.9      1,407.0     1,375      2,272        186.1  inbetween(GNet *)                     
+      0.0          344,897          1    344,897.0    344,897.0   344,897    344,897          0.0  initialize(GNet *)                    
+      0.0           84,928          1     84,928.0     84,928.0    84,928     84,928          0.0  print_result(GNet *)                  
+      0.0            1,856          1      1,856.0      1,856.0     1,856      1,856          0.0  boot_redex(GNet *, unsigned long long)
+
+[7/8] Executing 'cuda_gpu_mem_time_sum' stats report
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)     Med (ns)    Min (ns)  Max (ns)   StdDev (ns)      Operation     
+ --------  ---------------  -----  -----------  -----------  --------  ---------  -----------  ------------------
+     63.3        6,947,799      3  2,315,933.0  1,508,581.0       417  5,438,801  2,807,644.6  [CUDA memcpy HtoD]
+     36.7        4,020,604  2,221      1,810.3      1,408.0     1,248    195,457      7,683.7  [CUDA memcpy DtoH]
+
+[8/8] Executing 'cuda_gpu_mem_size_sum' stats report
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)      Operation     
+ ----------  -----  --------  --------  --------  --------  -----------  ------------------
+     51.380      3    17.127    25.690     0.000    25.690       14.832  [CUDA memcpy HtoD]
+      0.013  2,221     0.000     0.000     0.000     0.000        0.000  [CUDA memcpy DtoH]
+
+Generated:
+    /oscar/home/igordon/cs1952y_final/out/fib_recursive35.nsys-rep
+    /oscar/home/igordon/cs1952y_final/out/fib_recursive35.sqlite

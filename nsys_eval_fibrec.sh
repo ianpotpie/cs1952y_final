@@ -1,13 +1,11 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 <bend_script> <graphics_card> <note>"
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <num>"
     exit 1
 fi
 
-BEND_SCRIPT=$1
-GRAPHICS_CARD=$2
-NOTE=$3
+NUM=$1
 
 # The pre-script ends
 sbatch << EOF
@@ -17,9 +15,9 @@ sbatch << EOF
 #SBATCH --mem=12G
 #SBATCH -t 1:00:00
 #SBATCH -N 1
-#SBATCH -o out/nsys-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.out
-#SBATCH -e out/nsys-${BEND_SCRIPT}-on-${GRAPHICS_CARD}-%j.err
-#SBATCH -C ${GRAPHICS_CARD}
+#SBATCH -o out/nsys-fib_recursive${NUM}-on-a5000-%j.out
+#SBATCH -e out/nsys-fib_recursive${NUM}-on-a5000-%j.err
+#SBATCH -C a5000
 
 module load openssl/1.1.1t-u2rkdft
 module load python/3.11.0s-ixrhc3q
@@ -50,5 +48,6 @@ else
 fi
 
 echo -e "\n====== Program Output ======"
-nsys profile --stats=true -o out/${BEND_SCRIPT}-on-${GRAPHICS_CARD} bend run-cu bend_scripts/${BEND_SCRIPT}.bend -s
+python set_fibrec_arg.py $NUM
+nsys profile --stats=true -o out/fib_recursive${NUM} bend run-cu bend_scripts/fib_recursive.bend -s
 EOF
