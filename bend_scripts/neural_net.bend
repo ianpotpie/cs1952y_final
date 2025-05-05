@@ -430,42 +430,8 @@ def test(test_data, test_labels, bias_vector, weights_matrix, row_index, correct
               return test(test_data, test_labels.tail, bias_vector, weights_matrix, row_index + 1, correct_predictions, total_predictions)
 
 
-def main() -> IO(List):
-  # list1 = List/Cons { head: 1, tail: List/Cons { head: 2, tail: List/Cons { head: 3, tail: List/Cons { head: 4, tail: List/Nil } } } }
-  
-  # list2 = List/Cons { head: 5, tail: List/Cons { head: 6, tail: List/Cons { head: 7, tail: List/Cons { head: 8, tail: List/Nil } } } }
-
-  list3 = [[1,2,3], [4,5,6], [7,8,9]]
-  list4 = [[1,2,3], [4,5,6], [7,8,9]]
-  list5 = [0, 1, 2, 3, 7, 8, 9]
-  list6 = [1, 3, 5, 3, 7, 8, 9]
-  # return index_into(list4, 1, 0)
-  # return concat([concat([index(get_row(index(list4, 2)), 0)], 6)], 8)
-  # return index_into(list5, 4, 0)
-  # correct_column = get_column(list4, [], 1, 0)
-  # return correct_column
-  # correct_row = get_row_at_index(1, list3)
-  # return correct_row
-  # return multiply_lists(correct_column, correct_row)
-  # return dot_product(correct_column, correct_row)
-  listA = [[1, 2, 3], [4, 5, 6]]
-  listB = [[7, 8], [9, 10], [11, 12]]
-  # return matrix_multiply(listA, listB, 0, [])
-  # return transpose_matrix(listB, 0, [])
-  
-  # return sigmoid(list5, [])
-  # MAKE SURE THAT DURING THE FORWARD PASS I TO THE TO_F24 TO ALL THE INPUTS 
-  input_data = [[5.5,2.4,3.8,1.1]]
-
-  initial_weights = [[0.71], 
-          [0.23], 
-          [0.04], 
-          [0.21]]
-  # 1x4 * 4x1 = 1x1, so that should be the size of my bias
-  initial_bias = [[0.34]]
-  forward = forward_pass(input_data, initial_weights, initial_bias)
-
-  training_data = [[5.5,2.4,3.8,1.1],
+def train_data():
+  return [[5.5,2.4,3.8,1.1],
 [5.5,2.4,3.7,1.0],
 [5.1,3.5,1.4,0.2],
 [4.9,3.0,1.4,0.2],
@@ -546,11 +512,8 @@ def main() -> IO(List):
 [5.1,2.5,3.0,1.1],
 [5.7,2.8,4.1,1.3]]
 
-  training_labels = [1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 
-1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1]
-
-
-  testing_data = [[6.3,3.3,4.7,1.6],
+def test_data():
+  return [[6.3,3.3,4.7,1.6],
 [4.9,2.4,3.3,1.0],
 [6.6,2.9,4.6,1.3],
 [5.0,3.5,1.3,0.3],
@@ -571,20 +534,27 @@ def main() -> IO(List):
 [5.2,2.7,3.9,1.4],
 [5.0,3.3,1.4,0.2]]
 
+def main() -> IO(List):
+
+
+  initial_weights = [[0.71], 
+          [0.23], 
+          [0.04], 
+          [0.21]]
+
+  initial_bias = [[0.34]]
+
+
+  training_data = train_data()
+
+  training_labels = [1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 
+1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+
+
+  testing_data = test_data()
+
   testing_labels = [1,1,1,0,0,0,1,1,1,0,0,1,1,0,1,0,0,0,1,0]
 
-  # def backwards_pass(output_matrix, input_matrix, true_values, weights_matrix, bias_vector):
-  # return forward
-    
-  # return backwards_pass(forward, input_data, [[1]], initial_weights, initial_bias)
+  weights, bias = epochs(training_data, training_labels, initial_bias, initial_weights, 500)
 
-  # return train(training_data, training_labels, initial_bias, initial_weights, 0)
-  weights, bias = epochs(training_data, training_labels, initial_bias, initial_weights, 10)
-  # (test_data, test_labels, bias_vector, weights_matrix, row_index, correct_predictions, total_predictions):
   return test(testing_data, testing_labels, bias, weights, 0, 0, 0)
-  # return train()
-
-  # return total_list_elements(testing_labels, 0)
-  
-  # return scalar_multiply(gradient_W, learning_rate, 0, [])
-  # return backwards_pass()

@@ -16,4 +16,4 @@ def main() -> u24:
   # With the recursive version we create a tree with exponential size.
   # For numbers larger than ~45, this will hit the maximum HVM memory and crash.
   # Try uncommenting and running this line and compare the execution time.
-  return fib_recursive(43)
+  return fib_recursive(30)

@@ -30,7 +30,7 @@ def extract_max_cpu_process(ps_output):
 def track_memory_usage():
     memory_usages = [] 
     
-    for _ in range(8):
+    for _ in range(16):
         
         ps_output = get_ps_output()
         
